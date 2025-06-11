@@ -1412,6 +1412,10 @@ h5 {
   max-width: 24rem;
 }
 
+.max-w-xl {
+  max-width: 36rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -2454,6 +2458,10 @@ h5 {
   text-transform: capitalize;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .not-italic {
   font-style: normal;
 }
@@ -2601,6 +2609,11 @@ h5 {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#D3AE91\] {
+  --tw-text-opacity: 1;
+  color: rgb(211 174 145 / var(--tw-text-opacity, 1));
 }
 
 .underline {
