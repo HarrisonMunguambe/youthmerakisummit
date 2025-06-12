@@ -266,9 +266,10 @@
                         <!-- Conteúdo à direita -->
                         <div class="jos" data-jos_animation="fade-right">
                             <h2
-                                class="font-clashDisplay text-4xl font-medium text-[#020826] leading-tight sm:text-[44px] lg:text-[56px] xl:text-[75px] mb-6">
+                                class="font-clashDisplay text-4xl font-medium text-[#020826] leading-[1.05] sm:text-[44px] lg:text-[56px] xl:text-[75px] mb-6">
                                 Estás pronto para te <span class="text-[#8C785C]">desafiar?</span>
                             </h2>
+
 
                             <p class="text-[#020826] text-lg leading-relaxed mb-4">
                                 Acreditamos que a transformação começa com acção. No Youth Meraki Summit vais aprender,
@@ -301,33 +302,44 @@
 
             <!--...::: Content Section Start :::... -->
             <section id="content-section-2" class="bg-gradient-to-br from-[#FFFDFB] via-[#e8e3dd] to-[#d3ae91]/30">
-                <!-- Section Spacer -->
                 <div class="pt-14 pb-10 md:pb-15 lg:pb-15 xl:pb-[100px]">
-                    <!-- Section Container -->
                     <div class="global-container">
                         <div
                             class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-[1fr_1fr] xl:gap-28 xxl:gap-[134px]">
 
-                            <!-- Imagem à direita -->
+                            <!-- Slider com autoplay e altura aumentada -->
                             <div class="jos order-2 mt-12 md:mt-0 w-full h-full flex justify-center items-center"
                                 data-jos_animation="fade-up">
-                                <div class="bg-white/40 rounded-xl shadow-xl overflow-hidden">
-                                    <img src="assets/img/th-2/DSC_0078.jpeg.jpg" alt="Equipe Youth Meraki"
-                                        class="w-full max-w-[560px] aspect-[3/2] object-cover rounded-xl" />
+                                <div
+                                    class="relative w-full max-w-[800px] h-[560px] rounded-xl shadow-xl overflow-hidden bg-white/40">
+                                    <div id="slider" class="relative w-full h-full overflow-hidden">
+                                        <div
+                                            class="slide absolute inset-0 w-full h-full transition-opacity duration-1000 opacity-100">
+                                            <img src="assets/img/th-2/DSC_0078.jpeg.jpg" alt="Youth Meraki 1"
+                                                class="w-full h-full object-cover rounded-xl" />
+                                        </div>
+                                        <div
+                                            class="slide absolute inset-0 w-full h-full transition-opacity duration-1000 opacity-0">
+                                            <img src="assets/img/th-2/WhatsApp Image 2025-03-10 at 11.44.10_954de34c.jpg"
+                                                alt="Youth Meraki 2" class="w-full h-full object-cover rounded-xl" />
+                                        </div>
+                                        <div
+                                            class="slide absolute inset-0 w-full h-full transition-opacity duration-1000 opacity-0">
+                                            <img src="assets/img/th-2/WhatsApp Image 2025-03-10 at 11.44.10_fc18427a.jpg"
+                                                alt="Youth Meraki 3" class="w-full h-full object-cover rounded-xl" />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
                             <!-- Texto à esquerda -->
                             <div class="jos order-1" data-jos_animation="fade-right">
-                                <!-- Título -->
                                 <div class="mb-6">
                                     <h2
                                         class="font-clashDisplay text-4xl font-medium text-[#020826] leading-[1.06] sm:text-[44px] lg:text-[56px] xl:text-[75px]">
                                         A essência da <span class="text-[#8C785C]">Youth Meraki</span>
                                     </h2>
                                 </div>
-
-                                <!-- Parágrafos justificados -->
                                 <div class="text-lg text-[#020826] leading-[1.66] text-justify">
                                     <p class="mb-7">
                                         A <strong>Youth Meraki</strong> é uma empresa moçambicana criada por jovens com
@@ -338,19 +350,19 @@
                                         Acreditamos numa
                                         geração forte, resiliente, conectada e capaz de transformar sonhos em
                                         conquistas reais.
-
+                                    </p>
+                                    <p class="mb-7">
                                         Trabalhamos com paixão para transformar aspirações em sucesso tangível.
                                         Promovemos os valores de <strong>Educação, Inclusão, Excelência,
                                             Cooperação</strong> e
-                                        <strong>Integridade</strong>.
+                                        <strong>Integridade</strong>, porque acreditamos num Moçambique com jovens
+                                        preparados para impactar o mundo.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Section Container -->
                 </div>
-                <!-- Section Spacer -->
             </section>
 
 
@@ -358,7 +370,7 @@
             <!--...::: Content Section End :::... -->
 
             <!--...::: Content Section Start :::... -->
-            <section id="content-section-3">
+            <section hidden id="content-section-3">
                 <!-- Section Spacer -->
                 <div class="pb-20 md:pb-36 lg:pb-28 xl:pb-[150px]">
                     <!-- Section Container -->
@@ -1198,6 +1210,18 @@
 
     <!-- Main js -->
     <script src="assets/js/main.js"></script>
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let current = 0;
+
+        setInterval(() => {
+            slides[current].classList.remove('opacity-100');
+            slides[current].classList.add('opacity-0');
+            current = (current + 1) % slides.length;
+            slides[current].classList.remove('opacity-0');
+            slides[current].classList.add('opacity-100');
+        }, 3000);
+    </script>
 </body>
 
 </html>

@@ -1096,6 +1096,10 @@ h5 {
   aspect-ratio: 3/2;
 }
 
+.aspect-\[16\/9\] {
+  aspect-ratio: 16/9;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -1234,6 +1238,10 @@ h5 {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[560px\] {
+  height: 560px;
 }
 
 .min-h-\[180px\] {
@@ -1462,6 +1470,10 @@ h5 {
 
 .max-w-\[560px\] {
   max-width: 560px;
+}
+
+.max-w-\[800px\] {
+  max-width: 800px;
 }
 
 .flex-1 {
@@ -2890,8 +2902,18 @@ h5 {
   transition-duration: 150ms;
 }
 
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
 }
 
 .ease-in-out {
