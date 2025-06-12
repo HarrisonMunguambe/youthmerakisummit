@@ -869,6 +869,10 @@ h5 {
   order: 3;
 }
 
+.order-4 {
+  order: 4;
+}
+
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -1260,6 +1264,10 @@ h5 {
   height: 90px;
 }
 
+.h-14 {
+  height: 3.5rem;
+}
+
 .min-h-\[180px\] {
   min-height: 180px;
 }
@@ -1419,6 +1427,10 @@ h5 {
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-14 {
+  width: 3.5rem;
 }
 
 .max-w-\[1090px\] {
@@ -3759,6 +3771,11 @@ h5 {
   background-color: rgb(226 232 240 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-\[\#D3AE91\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(211 174 145 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
@@ -4596,6 +4613,11 @@ h5 {
 
   .lg\:text-\[54px\] {
     font-size: 54px;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .lg\:leading-5 {
