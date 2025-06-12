@@ -26,6 +26,21 @@
 
     <!-- Production css -->
     <!-- <link rel="stylesheet" href="assets/css/style.min.css"> -->
+    <style>
+        @keyframes slide-x {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-slide-x {
+            animation: slide-x 20s linear infinite;
+        }
+    </style>
 </head>
 
 <body>
@@ -361,6 +376,11 @@
                     </div>
                 </div>
             </section>
+            <div class="global-container">
+                <div class="h-[1.5px] w-full bg-[#8C785C]"></div>
+            </div>
+
+
 
 
             <!--...::: Content Section End :::... -->
@@ -431,159 +451,137 @@
             <!--...::: Content Section Start :::... -->
             <section id="content-intregrates-section">
                 <div class="relative z-[1] overflow-hidden bg-colorCodGray text-white">
-                    <!-- Section Spacer -->
                     <div class="py-20 xl:py-[130px]">
-                        <!-- Section Spacer -->
                         <div class="global-container">
                             <div
-                                class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_1fr)_.8fr] xl:gap-28 xxl:gap-[134px]">
+                                class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 xl:grid-cols-[minmax(0,_1fr)_.8fr] xl:gap-28 xxl:gap-[134px]">
+
+                                <!-- Texto institucional -->
                                 <div class="jos">
-                                    <!-- Section Content Block -->
-                                    <div class="mb-6">
-                                        <h2
-                                            class="font-clashDisplay text-4xl font-medium leading-[1.06] text-white sm:text-[44px] lg:text-[56px] xl:text-[75px]">
-                                            Integrates your favorite channels
-                                        </h2>
-                                    </div>
-                                    <!-- Section Content Block -->
-                                    <p class="mb-7 last:mb-0">
-                                        The ability to integrate AI chatbots into multiple
-                                        channels enables businesses to meet users where they are,
-                                        providing a consistent and convenient experience across
-                                        various touchpoints.
+                                    <h2
+                                        class="font-clashDisplay text-4xl font-medium leading-[1.06] text-white sm:text-[44px] lg:text-[56px] xl:text-[75px] mb-6">
+                                        Sobre a Youth Meraki</span>
+                                    </h2>
+                                    <p class="mb-7 text-lg text-justify">
+                                        A Youth Meraki é uma empresa criada por jovens Moçambicanos com
+                                        atuação
+                                        nacional e internacional.
+                                        O nosso foco está no empoderamento juvenil através da educação, orientação
+                                        académica,
+                                        mobilidade internacional
+                                        e liderança transformadora.
                                     </p>
-                                    <ul
-                                        class="my-12 flex flex-col gap-y-6 font-clashDisplay text-[22px] font-medium leading-[1.28] tracking-[1px] lg:text-[28px]">
-                                        <li
-                                            class="relative pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[15px] after:w-[15px] after:rounded-[50%] after:bg-colorViolet">
-                                            It preferred all communication channels
-                                        </li>
-                                        <li
-                                            class="relative pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[15px] after:w-[15px] after:rounded-[50%] after:bg-colorViolet">
-                                            Use platform users regardless of support
-                                        </li>
-                                    </ul>
-
-                                    <a href="https://www.example.com"
-                                        class="button relative z-[1] inline-flex items-center gap-3 rounded-[50px] border-none bg-colorViolet py-[18px] text-white after:bg-colorOrangyRed hover:text-white">Explore
-                                        Integrations
-                                        <img src="assets/img/th-2/icon-white-long-arrow-right.svg"
-                                            alt="icon-white-long-arrow-right" /></a>
+                                    <p class="mb-7 text-lg text-justify">
+                                        Acreditamos numa geração mais forte, resiliente, empoderada e conectada, capaz
+                                        de
+                                        transformar sonhos em conquistas reais.
+                                        A nossa missão é empoderar jovens e transformar aspirações em sucesso tangível,
+                                        promovendo
+                                        os valores de
+                                        Educação, Inclusão,
+                                        Excelência,
+                                        Cooperação e Integridade.
+                                    </p>
                                 </div>
 
+                                <!-- Cartão de impacto -->
+                                <!-- Cartão com frase impactante e fundo restaurado -->
                                 <div
-                                    class="flex flex-col gap-6 overflow-hidden rounded-[30px] bg-gradient-to-t from-[rgba(255,255,255,.1)] to-[rgba(0,0,0,0.5)] py-[124px]">
-                                    <!-- Logo Horizontal Animation -->
-                                    <div class="horizontal-slide-from-right-to-left flex w-[1161px] gap-x-6">
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-discord.svg"
-                                                alt="icon-flat-color-discord" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-github.svg"
-                                                alt="icon-flat-color-github" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-mailchamp.svg"
-                                                alt="icon-flat-color-mailchamp" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-messenger.svg"
-                                                alt="icon-flat-color-messenger" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-skype.svg"
-                                                alt="icon-flat-color-skype" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-slack.svg"
-                                                alt="icon-flat-color-slack" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-snapchat.svg"
-                                                alt="icon-flat-color-snapchat" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-whatsapp.svg"
-                                                alt="icon-flat-color-whatsapp" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-zendesk.svg"
-                                                alt="icon-flat-color-zendesk" />
-                                        </div>
-                                    </div>
-                                    <!-- Logo Horizontal Animation -->
-
-                                    <!-- Logo Horizontal Animation -->
-                                    <div class="horizontal-slide-from-left-to-right flex w-[1161px] gap-x-6">
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-discord.svg"
-                                                alt="icon-flat-color-discord" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-github.svg"
-                                                alt="icon-flat-color-github" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-mailchamp.svg"
-                                                alt="icon-flat-color-mailchamp" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-messenger.svg"
-                                                alt="icon-flat-color-messenger" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-skype.svg"
-                                                alt="icon-flat-color-skype" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-slack.svg"
-                                                alt="icon-flat-color-slack" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-snapchat.svg"
-                                                alt="icon-flat-color-snapchat" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-whatsapp.svg"
-                                                alt="icon-flat-color-whatsapp" />
-                                        </div>
-                                        <div
-                                            class="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                                            <img src="assets/img/th-2/icon-flat-color-zendesk.svg"
-                                                alt="icon-flat-color-zendesk" />
-                                        </div>
-                                    </div>
-                                    <!-- Logo Horizontal Animation -->
+                                    class="relative rounded-[30px] p-10 bg-[#D3AE91] shadow-2xl flex flex-col justify-center items-center text-center h-[320px]">
+                                    <blockquote
+                                        class="text-[#020826] text-xl lg:text-2xl font-medium italic leading-snug mb-4">
+                                        “A Juventude é a Força Motriz da Revolução.
+                                    </blockquote>
+                                    <span class="text-md italic text-[#020826]/80">— Samora Machel</span>
                                 </div>
+
+
                             </div>
                         </div>
-                        <!-- Section Spacer -->
-                    </div>
-                    <!-- Section Spacer -->
 
-                    <div
-                        class="absolute left-1/2 top-[80%] -z-[1] h-[1280px] w-[1280px] -translate-x-1/2 rounded-full bg-gradient-to-t from-[#5636C7] to-[#5028DD] blur-[250px]">
+                        <!-- Brilho no fundo -->
+                        <div
+                            class="absolute left-1/2 top-[80%] -z-[1] h-[1280px] w-[1280px] -translate-x-1/2 rounded-full bg-gradient-to-t from-[#D3AE91] to-[#020826] blur-[250px]">
+                        </div>
                     </div>
                 </div>
             </section>
+
+            <section id="promo-section">
+                <div class="pb-20 pt-20 xl:pb-[130px] xl:pt-[150px]">
+                    <div class="global-container">
+                        <!-- Section Content Block -->
+                        <div
+                            class="jos mx-auto mb-10 text-center md:mb-16 md:max-w-xl lg:mb-20 lg:max-w-3xl xl:max-w-[1000px]">
+                            <h2
+                                class="font-raleway text-4xl font-medium leading-[1.04] text-[#020826] sm:text-[44px] lg:text-[54px] xl:text-[75px]">
+                                Tema: Stronger Generation <br class="hidden sm:block" />
+                            </h2>
+                        </div>
+                        <!-- Section Content Block -->
+
+                        <!-- Promo List -->
+                        <ul class="grid gap-x-6 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
+                            <!-- Promo Item 1 -->
+                            <li class="jos text-center md:text-left" data-jos_delay="0.1">
+                                <div
+                                    class="mx-auto mb-[30px] inline-flex h-10 w-auto justify-center md:justify-normal xxl:h-[60px] text-[#8C785C]">
+                                    <img src="assets/img/th-3/icon-black-promo-1.svg" alt="ícone" width="60" height="60"
+                                        class="h-full w-auto filter brightness-0 invert-[.25] sepia-[.7] hue-rotate-[330deg] saturate-[4]" />
+                                </div>
+                                <div
+                                    class="mb-5 font-raleway text-2xl font-bold leading-[1.33] text-[#020826] xl:text-3xl">
+                                    O Significado
+                                </div>
+                                <p class="text-lg leading-[1.42] xl:text-[21px] text-[#020826]">
+                                    Stronger Generation representa a urgência de formarmos jovens preparados para romper
+                                    ciclos de
+                                    fragilidade e assumirem o protagonismo da transformação social.
+                                </p>
+                            </li>
+
+                            <!-- Promo Item 2 -->
+                            <li class="jos text-center md:text-left" data-jos_delay="0.2">
+                                <div
+                                    class="mx-auto mb-[30px] inline-flex h-10 w-auto justify-center md:justify-normal xxl:h-[60px] text-[#8C785C]">
+                                    <img src="assets/img/th-3/icon-black-promo-2.svg" alt="ícone" width="70" height="60"
+                                        class="h-full w-auto filter brightness-0 invert-[.25] sepia-[.7] hue-rotate-[330deg] saturate-[4]" />
+                                </div>
+                                <div
+                                    class="mb-5 font-raleway text-2xl font-bold leading-[1.33] text-[#020826] xl:text-3xl">
+                                    O Lema Inspirador
+                                </div>
+                                <p class="text-lg leading-[1.42] xl:text-[21px] text-[#020826]">
+                                    “Tempos fáceis criam pessoas fracas, pessoas fracas criam tempos difíceis, tempos
+                                    difíceis criam
+                                    pessoas fortes, e pessoas fortes criam tempos fáceis.”
+                                </p>
+                            </li>
+
+                            <!-- Promo Item 3 -->
+                            <li class="jos text-center md:text-left" data-jos_delay="0.3">
+                                <div
+                                    class="mx-auto mb-[30px] inline-flex h-10 w-auto justify-center md:justify-normal xxl:h-[60px] text-[#8C785C]">
+                                    <img src="assets/img/th-3/icon-black-promo-3.svg" alt="ícone" width="67" height="60"
+                                        class="h-full w-auto filter brightness-0 invert-[.25] sepia-[.7] hue-rotate-[330deg] saturate-[4]" />
+                                </div>
+                                <div
+                                    class="mb-5 font-raleway text-2xl font-bold leading-[1.33] text-[#020826] xl:text-3xl">
+                                    Um Chamado à Juventude
+                                </div>
+                                <p class="text-lg leading-[1.42] xl:text-[21px] text-[#020826]">
+                                    Nesta edição de estreia, desafiamos os jovens moçambicanos a tornarem-se líderes
+                                    conscientes,
+                                    inovadores e comprometidos com a construção de um Moçambique mais forte.
+                                </p>
+                            </li>
+                        </ul>
+                        <!-- Promo List -->
+                    </div>
+                </div>
+            </section>
+
+
             <!--...::: Content Section End :::... -->
 
             <!--...::: Testimonial Section Start :::... -->
