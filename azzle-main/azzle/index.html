@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Azzle - AI Technology & Startup HTML Template</title>
+    <title>Youth Meraki</title>
     <meta name="description" content="AIMass Tailwind based SASS Template" />
 
     <!-- Favicon  -->
-    <link rel="icon" href="assets/img/favicon.png" />
+    <link rel="icon" href="assets/img/cropped-Group-qy0bpl6xoyglrmtxhqt2jo1jk6ce1vxwusbhp8i23k (1).png" />
 
     <!-- Site font -->
     <link href="assets/fonts/fonts.css" rel="stylesheet" />
@@ -26,6 +26,21 @@
 
     <!-- Production css -->
     <!-- <link rel="stylesheet" href="assets/css/style.min.css"> -->
+    <style>
+        @keyframes slide-x {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-slide-x {
+            animation: slide-x 20s linear infinite;
+        }
+    </style>
 </head>
 
 <body>
@@ -35,8 +50,9 @@
             <div class="global-container">
                 <div class="flex items-center justify-between gap-x-8">
                     <!-- Header Logo -->
-                    <a href="index.html" class="">
-                        <img src="assets/img/logo-dark.png" alt="AIMass" width="96" height="24" />
+                    <a href="#hero-section" class="">
+                        <img src="assets/img/Youth Meraki V1 WEBSITE.png" alt="Youth Meraki Logo" width="96"
+                            height="24" />
                     </a>
                     <!-- Header Logo -->
 
@@ -47,458 +63,381 @@
                             <div class="mobile-menu-head">
                                 <div class="go-back">
                                     <img class="dropdown-icon" src="assets/img/icon-black-long-arrow-right.svg"
-                                        alt="cheveron-right" width="16" height="16" />
+                                        alt="voltar" width="16" height="16" />
                                 </div>
                                 <div class="current-menu-title"></div>
                                 <div class="mobile-menu-close">&times;</div>
                             </div>
-                            <ul class="site-menu-main">
-                                <li class="nav-item nav-item-has-children">
-                                    <a href="#" class="nav-link-item drop-trigger">Demo
-                                        <img class="dropdown-icon" src="assets/img/icon-black-cheveron-right.svg"
-                                            alt="cheveron-right" width="16" height="16" /></a>
-                                    <ul class="sub-menu" id="submenu-1">
-                                        <li class="sub-menu--item">
-                                            <a href="index.html">home 01</a>
-                                        </li>
-                                        <li class="sub-menu--item">
-                                            <a href="index-2.html">home 02</a>
-                                        </li>
-                                        <li class="sub-menu--item">
-                                            <a href="index-3.html">home 03</a>
-                                        </li>
-                                        <li class="sub-menu--item">
-                                            <a href="index-4.html"> home 04</a>
-                                        </li>
-                                    </ul>
+                            <ul class="site-menu-main is-text-white">
+                                <li class="nav-item"><a href="#hero-section" class="nav-link-item">Início</a></li>
+                                <li class="nav-item"><a href="#sobre" class="nav-link-item">Sobre</a></li>
+                                <li class="nav-item"><a href="#actividades" class="nav-link-item">Actividades</a></li>
+                                <li class="nav-item"><a href="#oradores" class="nav-link-item">Oradores</a></li>
+                                <li class="nav-item"><a href="#patrocinadores" class="nav-link-item">Patrocinadores</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="about.html" class="nav-link-item">About</a>
-                                </li>
-                                <li class="nav-item nav-item-has-children">
-                                    <a href="#" class="nav-link-item drop-trigger">Services
-                                        <img class="dropdown-icon" src="assets/img/icon-black-cheveron-right.svg"
-                                            alt="cheveron-right" width="16" height="16" /></a>
-                                    <ul class="sub-menu" id="submenu-2">
-                                        <li class="sub-menu--item">
-                                            <a href="services.html">Services</a>
-                                        </li>
-                                        <li class="sub-menu--item">
-                                            <a href="service-details.html">Service Details</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item nav-item-has-children">
-                                    <a href="#" class="nav-link-item drop-trigger">Pages
-                                        <img class="dropdown-icon" src="assets/img/icon-black-cheveron-right.svg"
-                                            alt="cheveron-right" width="16" height="16" /></a>
-                                    <ul class="sub-menu" id="submenu-3">
-                                        <li class="sub-menu--item nav-item-has-children">
-                                            <a href="#" data-menu-get="h3" class="drop-trigger">blogs
-                                                <img class="dropdown-icon"
-                                                    src="assets/img/icon-black-cheveron-right.svg" alt="cheveron-right"
-                                                    width="16" height="16" /></a>
-                                            <ul class="sub-menu shape-none" id="submenu-4">
-                                                <li class="sub-menu--item">
-                                                    <a href="blog.html">blogs</a>
-                                                </li>
-                                                <li class="sub-menu--item">
-                                                    <a href="blog-details.html">blog details</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="sub-menu--item nav-item-has-children">
-                                            <a href="#" data-menu-get="h3" class="drop-trigger">Team
-                                                <img class="dropdown-icon"
-                                                    src="assets/img/icon-black-cheveron-right.svg" alt="cheveron-right"
-                                                    width="16" height="16" />
-                                            </a>
-                                            <ul class="sub-menu shape-none" id="submenu-5">
-                                                <li class="sub-menu--item">
-                                                    <a href="teams.html">Teams</a>
-                                                </li>
-                                                <li class="sub-menu--item">
-                                                    <a href="team-details.html">Teams Details</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="sub-menu--item nav-item-has-children">
-                                            <a href="#" data-menu-get="h3" class="drop-trigger">FAQ
-                                                <img class="dropdown-icon"
-                                                    src="assets/img/icon-black-cheveron-right.svg" alt="cheveron-right"
-                                                    width="16" height="16" />
-                                            </a>
-                                            <ul class="sub-menu shape-none" id="submenu-6">
-                                                <li class="sub-menu--item">
-                                                    <a href="faq.html">FAQ-1</a>
-                                                </li>
-                                                <li class="sub-menu--item">
-                                                    <a href="faq-2.html">FAQ-2</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="sub-menu--item nav-item-has-children">
-                                            <a href="#" data-menu-get="h3" class="drop-trigger">Portfolio
-                                                <img class="dropdown-icon"
-                                                    src="assets/img/icon-black-cheveron-right.svg" alt="cheveron-right"
-                                                    width="16" height="16" />
-                                            </a>
-                                            <ul class="sub-menu shape-none" id="submenu-7">
-                                                <li class="sub-menu--item">
-                                                    <a href="portfolio.html">Portfolio</a>
-                                                </li>
-                                                <li class="sub-menu--item">
-                                                    <a href="portfolio-details.html">Portfolio Details</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="sub-menu--item">
-                                            <a href="pricing.html" data-menu-get="h3" class="drop-trigger">Pricing
-                                            </a>
-                                        </li>
-
-                                        <li class="sub-menu--item nav-item-has-children">
-                                            <a href="#" data-menu-get="h3" class="drop-trigger">Utilities
-                                                <img class="dropdown-icon"
-                                                    src="assets/img/icon-black-cheveron-right.svg" alt="cheveron-right"
-                                                    width="16" height="16" />
-                                            </a>
-                                            <ul class="sub-menu shape-none" id="submenu-8">
-                                                <li class="sub-menu--item">
-                                                    <a href="error-404.html">Error 404</a>
-                                                </li>
-                                                <li class="sub-menu--item">
-                                                    <a href="login.html">Login</a>
-                                                </li>
-                                                <li class="sub-menu--item">
-                                                    <a href="signup.html">Signup</a>
-                                                </li>
-                                                <li class="sub-menu--item">
-                                                    <a href="reset-password.html">Reset Password</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="contact.html" class="nav-link-item">Contact</a>
-                                </li>
+                                <li class="nav-item"><a href="#pacotes" class="nav-link-item">Pacotes</a></li>
                             </ul>
                         </nav>
                     </div>
                     <!-- Header Navigation -->
 
-                    <!-- Header User Event -->
+                    <!-- Header Action Button -->
                     <div class="flex items-center gap-6">
-                        <a href="login.html"
-                            class="button hidden rounded-[50px] border-[#7F8995] bg-transparent text-black after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white lg:inline-block">Login</a>
-                        <a href="signup.html"
-                            class="button hidden rounded-[50px] border-black bg-black text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white lg:inline-block">Sign
-                            up free</a>
-                        <!-- Responsive Offcanvas Menu Button -->
+                        <a href="#inscricao"
+                            class="inline-flex items-center gap-3 rounded-full bg-[#22185D] px-5 py-[12px] text-[#FFFE] font-semibold shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:bg-[#b79275] hover:text-white">
+                            Inscreva-se
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+
+
+                        <!-- Mobile Menu Trigger -->
                         <div class="block lg:hidden">
-                            <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
-                                <span></span>
-                                <span></span>
+                            <button class="mobile-menu-trigger is-white">
                                 <span></span>
                             </button>
                         </div>
                     </div>
-                    <!-- Header User Event -->
+                    <!-- Header Action Button -->
                 </div>
             </div>
         </header>
+
         <!--...::: Header End :::... -->
 
         <main class="main-wrapper relative overflow-hidden">
             <!--...::: Hero Section Start :::... -->
-            <section id="section-hero">
-                <!-- Section Spacer -->
-                <div
-                    class="relative z-[1] overflow-hidden rounded-bl-[30px] rounded-br-[30px] bg-colorLinenRuffle pb-20 pt-28 lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24 lg:pt-32 xl:pt-40 xxl:pb-[133px] xxl:pt-[195px]">
-                    <!-- Section Container -->
-                    <div class="global-container">
-                        <!-- Hero Content -->
-                        <div class="mb-14 flex flex-col items-center text-center lg:mb-20">
-                            <h1 class="jos slide-from-bottom mb-6 max-w-[510px] lg:max-w-[768px] xl:max-w-[1076px]">
-                                Simplify your SaaS solution with AI
-                            </h1>
-                            <p
-                                class="jos slide-from-bottom mb-11 max-w-[700px] text-lg font-semibold sm:text-xl xl:max-w-[980px]">
-                                Our AI SAAS tool is a cloud-based software delivery model. It
-                                helps businesses forecast demand for products and services and
-                                optimize inventory management and supply chain operations.
-                            </p>
-                            <div class="jos flex flex-wrap justify-center gap-6" data-jos_animation="fade">
-                                <a href="#"
-                                    class="button rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white">Get
-                                    started for free</a>
-                                <a href="#"
-                                    class="button rounded-[50px] border-2 border-black bg-transparent py-4 text-black after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white">Learn
-                                    more</a>
-                            </div>
-                        </div>
-                        <!-- Hero Content -->
-                        <!-- Hero Image -->
-                        <div class="jos hero-img overflow-hidden rounded-2xl bg-black" data-jos_animation="zoom">
-                            <img src="assets/img/th-1/hero-dashboard.jpg" alt="hero-dashboard" width="1296" height="640"
-                                class="h-auto w-full" />
-                        </div>
-                        <!-- Hero Image -->
+            <section id="hero-section">
+                <div class="relative overflow-hidden bg-black text-white">
+                    <!-- Section Spacer -->
+                    <div class="pb-28 pt-28 md:pb-40 lg:pt-28 xl:pb-[90px] xl:pt-[122px]">
+                        <!-- Section Container -->
+                        <div class="global-container">
+                            <div class="grid grid-cols-1 items-center gap-10 md:grid-cols-[minmax(0,_1fr)_0.7fr]">
+                                <!-- Hero Content -->
+                                <div>
+                                    <h3
+                                        class="jos mb-6 max-w-md break-words font-clashDisplay text-5xl font-medium leading-none text-white md:max-w-full md:text-6xl lg:text-7xl xl:text-8xl xxl:text-[100px]">
+                                        Stronger Generation
+                                    </h3>
+                                    <p class="jos mb-8 text-lg max-w-xl">
+                                        O evento que transformará o teu futuro!<br />
+                                        <strong>9 de Agosto de 2025</strong> &nbsp; • &nbsp;
+                                        <strong>10h – 18h</strong><br />
 
-                        <div class="my-10 h-[1px] w-full bg-[#DBD6CF] lg:my-16 xl:my-20"></div>
-                        <div class="jos mx-auto mb-12 max-w-[715px] text-center lg:mb-16">
-                            <p class="text-lg">
-                                Companies of all sizes trust us to find AI SaaS critical to
-                                their growth and innovation
-                            </p>
-                        </div>
-                        <!-- Slider main container -->
-                        <div class="jos swiper brand-slider" data-jos_animation="fade">
-                            <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
-                                <!-- Slides -->
-                                <div class="swiper-slide">
-                                    <img src="assets/img/th-1/brand-1.png" alt="brand-1" width="180" height="38"
-                                        class="max-w-full" />
+                                    </p>
+                                    <blockquote class="jos italic text-[#D3AE91] font-semibold text-xl mb-10">
+                                        “Somos a geração que não foge dos desafios.
+                                        <br> Somos a geração que transforma.”
+                                    </blockquote>
+                                    <a href="https://maps.app.goo.gl/B4WoRVdfFCbVXC7T9" target="_blank"
+                                        class="inline-flex items-center gap-2 px-6 py-3 mt-6 rounded-full bg-[#D3AE91] hover:bg-[#c9a47f] text-[#020826] font-semibold shadow-md transition duration-300">
+                                        <!-- Ícone de localização (Heroicons ou similar) -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 11c1.104 0 2-.896 2-2s-.896-2-2-2-2 .896-2 2 .896 2 2 2zm0 10s8-4.5 8-10a8 8 0 10-16 0c0 5.5 8 10 8 10z" />
+                                        </svg>
+                                        Radisson Blu Hotel, Maputo
+                                    </a>
+
+
                                 </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/img/th-1/brand-2.png" alt="brand-2" width="183" height="35"
-                                        class="max-w-full" />
+                                <!-- Hero Content -->
+
+                                <!-- Hero Image -->
+                                <div class="hero-img animate-pulse overflow-hidden rounded-2xl bg-black text-right">
+                                    <img src="assets/img/th-2/hero-img-2.png" alt="Youth Meraki Robot" width="1296"
+                                        height="640" class="h-auto w-full" />
                                 </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/img/th-1/brand-3.png" alt="brand-3" width="172" height="35"
-                                        class="max-w-full" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/img/th-1/brand-4.png" alt="brand-4" width="175" height="30"
-                                        class="max-w-full" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/img/th-1/brand-5.png" alt="brand-5" width="168" height="36"
-                                        class="max-w-full" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/img/th-1/brand-1.png" alt="brand-1" width="180" height="38"
-                                        class="max-w-full" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/img/th-1/brand-2.png" alt="brand-2" width="183" height="35"
-                                        class="max-w-full" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/img/th-1/brand-3.png" alt="brand-3" width="172" height="35"
-                                        class="max-w-full" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/img/th-1/brand-4.png" alt="brand-4" width="175" height="30"
-                                        class="max-w-full" />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="assets/img/th-1/brand-5.png" alt="brand-5" width="168" height="36"
-                                        class="max-w-full" />
-                                </div>
+                                <!-- Hero Image -->
                             </div>
                         </div>
+                        <!-- Section Container -->
                     </div>
-                    <!-- Section Container -->
-                    <!-- Hero Background Shape 1 -->
+                    <!-- Section Spacer -->
+
+                    <!-- Background Gradient -->
                     <div
-                        class="orange-gradient-1 absolute -right-[150px] top-[370px] -z-[1] h-[500px] w-[500px] animate-spin rounded-[500px]">
+                        class="absolute left-1/2 top-[80%] h-[1280px] w-[1280px] -translate-x-1/2 rounded-full bg-gradient-to-t from-[#5636C7] to-[#5028DD] blur-[250px]">
                     </div>
-                    <!-- Hero Background Shape 2 -->
                     <div
-                        class="orange-gradient-2 absolute right-[57px] top-[620px] -z-[1] h-[450px] w-[450px] animate-spin rounded-[450px]">
+                        class="absolute bottom-0 left-1/2 h-[77px] w-full -translate-x-1/2 bg-[url(../img/th-2/arc-top-shape-1.svg)] bg-cover bg-center bg-no-repeat">
                     </div>
                 </div>
-                <!-- Section Spacer -->
             </section>
+
             <!--...::: Hero Section End :::... -->
 
-            <!--...::: Service Section Start :::... -->
-            <section id="section-service">
-                <!-- Section Spacer -->
-                <div class="pb-20 pt-20 xl:pb-[150px] xl:pt-[130px]">
-                    <!-- Section Container -->
+            <!--...::: Feature Section Start :::... -->
+            <section id="feature-section" class="bg-[#FFFFFE]">
+                <div class="pb-20 pt-1 xl:pb-[130px] xl:pt-[53px]">
                     <div class="global-container">
-                        <!-- Section Content Block -->
-                        <div class="jos mb-10 lg:mb-16 xl:mb-20">
-                            <div class="md:max-w-sm lg:max-w-xl xl:max-w-[746px]">
-                                <h2>Core features that make it valuable</h2>
+                        <!-- Título da seção -->
+                        <div
+                            class="jos mb-10 text-left sm:mx-auto sm:text-center md:mb-16 md:max-w-xl lg:mb-20 lg:max-w-3xl xl:max-w-[856px]">
+                            <h2
+                                class="font-clashDisplay text-4xl font-medium text-[#020826] leading-[1.06] sm:text-[44px] lg:text-[56px] xl:text-[75px]">
+                                O que vai encontrar no <span class="text-[#8C785C]"> Youth Meraki</span> Summit
+                            </h2>
+                        </div>
+
+                        <!-- Lista de Recursos / Benefícios -->
+                        <ul class="grid gap-x-6 gap-y-10 md:grid-cols-2 xl:grid-cols-3">
+
+                            <!-- Recurso 1 -->
+                            <li class="jos flex flex-col gap-x-[30px] gap-y-6 sm:flex-row" data-jos_delay="0.1">
+                                <div
+                                    class="flex h-20 w-20 items-center justify-center rounded-full bg-white p-4 shadow-[0_4px_60px_0_rgba(0,0,0,0.1)]">
+                                    <!-- Ícone -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-[#8C785C]" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </div>
+                                <div class="flex flex-1 flex-col gap-y-5">
+                                    <div
+                                        class="font-clashDisplay text-[22px] text-[#020826] font-medium leading-6 lg:text-[28px] lg:leading-5">
+                                        Palestras Inspiradoras
+                                    </div>
+                                    <p class="text-[#020826]">
+                                        Histórias que despertam consciência, liderança e visão de impacto social.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <!-- Recurso 2 -->
+                            <li class="jos flex flex-col gap-x-[30px] gap-y-6 sm:flex-row" data-jos_delay="0.2">
+                                <div
+                                    class="flex h-20 w-20 items-center justify-center rounded-full bg-white p-4 shadow-[0_4px_60px_0_rgba(0,0,0,0.1)]">
+                                    <!-- Ícone -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-[#8C785C]" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 8h2a2 2 0 012 2v9l-4-4H7a2 2 0 01-2-2V8a2 2 0 012-2h10z" />
+                                    </svg>
+                                </div>
+                                <div class="flex flex-1 flex-col gap-y-5">
+                                    <div
+                                        class="font-clashDisplay text-[22px] text-[#020826] font-medium leading-6 lg:text-[28px] lg:leading-5">
+                                        Painéis Interativos
+                                    </div>
+                                    <p class="text-[#020826]">
+                                        Discussões com jovens líderes sobre educação, tecnologia e futuro de Moçambique.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <!-- Recurso 3 -->
+                            <li class="jos flex flex-col gap-x-[30px] gap-y-6 sm:flex-row" data-jos_delay="0.3">
+                                <div
+                                    class="flex h-20 w-20 items-center justify-center rounded-full bg-white p-4 shadow-[0_4px_60px_0_rgba(0,0,0,0.1)]">
+                                    <!-- Ícone -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-[#8C785C]" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9.75 17L4 12.25l1.41-1.41L9.75 14.17l8.84-8.84L20 7.75z" />
+                                    </svg>
+                                </div>
+                                <div class="flex flex-1 flex-col gap-y-5">
+                                    <div
+                                        class="font-clashDisplay text-[22px] text-[#020826] font-medium leading-6 lg:text-[28px] lg:leading-5">
+                                        Despertando Líderes
+                                    </div>
+                                    <p class="text-[#020826]">
+                                        Dinâmicas que te tiram da zona de conforto e despertam o líder que há em ti.
+                                    </p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--...::: Feature Section End :::... -->
+
+            <!-- Separator -->
+            <div hidden class="global-container">
+                <div class="h-[1.5px] w-full bg-[#8C785C]"></div>
+            </div>
+            <!-- Separator -->
+            <section id="content-section-2" class="bg-gradient-to-br from-[#FFFDFB] via-[#e8e3dd] to-[#d3ae91]/30">
+                <div class="pt-14 pb-10 md:pb-15 lg:pb-15 xl:pb-[100px]">
+                    <div class="global-container">
+                        <div
+                            class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-[1fr_1fr] xl:gap-28 xxl:gap-[134px]">
+
+                            <!-- Slider com autoplay e altura aumentada -->
+                            <div class="jos order-2 mt-12 md:mt-0 w-full h-full flex justify-center items-center"
+                                data-jos_animation="fade-up">
+                                <div
+                                    class="relative w-full max-w-[800px] h-[560px] rounded-xl shadow-xl overflow-hidden bg-white/40">
+                                    <div id="slider" class="relative w-full h-full overflow-hidden">
+                                        <div
+                                            class="slide absolute inset-0 w-full h-full transition-opacity duration-1000 opacity-100">
+                                            <img src="assets/img/th-2/DSC_0078.jpeg.jpg" alt="Youth Meraki 1"
+                                                class="w-full h-full object-cover rounded-xl" />
+                                        </div>
+                                        <div
+                                            class="slide absolute inset-0 w-full h-full transition-opacity duration-1000 opacity-0">
+                                            <img src="assets/img/th-2/WhatsApp Image 2025-03-10 at 11.44.10_954de34c.jpg"
+                                                alt="Youth Meraki 2" class="w-full h-full object-cover rounded-xl" />
+                                        </div>
+                                        <div
+                                            class="slide absolute inset-0 w-full h-full transition-opacity duration-1000 opacity-0">
+                                            <img src="assets/img/th-2/WhatsApp Image 2025-03-10 at 11.44.10_fc18427a.jpg"
+                                                alt="Youth Meraki 3" class="w-full h-full object-cover rounded-xl" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Texto à esquerda -->
+                            <div class="jos order-1" data-jos_animation="fade-right">
+                                <div class="mb-6">
+                                    <h2
+                                        class="font-clashDisplay text-4xl font-medium text-[#020826] leading-[1.06] sm:text-[44px] lg:text-[56px] xl:text-[75px]">
+                                        O que é o <span class="text-[#8C785C] mr-1">Youth Meraki Summit</span>?
+                                    </h2>
+                                </div>
+                                <div class="text-lg text-[#020826] leading-[1.66] text-justify">
+                                    <p class="mb-7">
+                                        O <strong>Youth Meraki Sumit</strong> é o maior e mais poderoso evento de
+                                        transformação jovem de
+                                        Moçambique.
+                                        Será um dia de imersão total onde os participantes serão desafiados a quebrar as
+                                        suas limitações e visualizar um futuro
+                                        brilhante para as suas vidas. Cada jovem que lá estiver viverá uma experiência
+                                        impactante que irá transformar o seu
+                                        destino, obtendo mais clareza, propósito e estratégias para assumir o controle
+                                        da sua própria vida.
+
+                                    </p>
+                                    <p class="mb-7">
+                                        Mais do que um simples evento, o <strong>Youth Meraki Summit</strong> é um
+                                        <strong>catalisador de mudança
+                                            pessoal e coletiva</strong> . É um espaço onde
+                                        sonhos ganham forma, talentos são despertados e cada jovem é convidado a assumir
+                                        o seu papel como protagonista da
+                                        transformação de <strong>Moçambique</strong>.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <!-- Section Content Block -->
-                        <!-- Service List -->
-                        <ul
-                            class="jos grid grid-cols-1 gap-[2px] overflow-hidden rounded-[10px] border-2 border-black bg-black sm:grid-cols-2 lg:grid-cols-4">
-                            <!-- Service Item -->
-                            <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
-                                <div class="relative mb-9 h-[70px] w-[70px]">
-                                    <img src="assets/img/th-1/service-icon-black-1.svg" alt="" width="70" height="70" />
-                                    <img src="assets/img/th-1/service-icon-orange-1.svg" alt="service-icon-orange-1"
-                                        width="70" height="70"
-                                        class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100" />
-                                </div>
-                                <h3
-                                    class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
-                                    <a href="service-details.html" class="hover:text-colorOrangyRed">
-                                        Resource Flexibility
-                                    </a>
-                                </h3>
-
-                                <p class="mb-12 duration-300 group-hover:text-white">
-                                    This is an excellent option for people & small businesses
-                                    who are starting out.
-                                </p>
-
-                                <a href="service-details.html"
-                                    class="relative inline-block h-[30px] w-[30px] duration-300">
-                                    <img src="assets/img/th-1/arrow-right-black.svg" alt="arrow-right-black" width="30"
-                                        height="30" />
-                                    <img src="assets/img/th-1/arrow-right-orange.svg" alt="arrow-right-black" width="30"
-                                        height="30"
-                                        class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100" />
-                                </a>
-                            </li>
-                            <!-- Service Item -->
-                            <!-- Service Item -->
-                            <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
-                                <div class="relative mb-9 h-[70px] w-[70px]">
-                                    <img src="assets/img/th-1/service-icon-black-2.svg" alt="service-icon-black-2"
-                                        width="70" height="70" />
-                                    <img src="assets/img/th-1/service-icon-orange-2.svg" alt="service-icon-orange-1"
-                                        width="70" height="70"
-                                        class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100" />
-                                </div>
-
-                                <h3
-                                    class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
-                                    <a href="service-details.html" class="hover:text-colorOrangyRed">
-                                        Managed Services
-                                    </a>
-                                </h3>
-
-                                <p class="mb-12 duration-300 group-hover:text-white">
-                                    This is an excellent option for people & small businesses
-                                    who are starting out.
-                                </p>
-
-                                <a href="service-details.html"
-                                    class="relative inline-block h-[30px] w-[30px] duration-300">
-                                    <img src="assets/img/th-1/arrow-right-black.svg" alt="arrow-right-black" width="30"
-                                        height="30" />
-                                    <img src="assets/img/th-1/arrow-right-orange.svg" alt="arrow-right-black" width="30"
-                                        height="30"
-                                        class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100" />
-                                </a>
-                                <!-- Features Item -->
-                                <!-- Features Item -->
-                            </li>
-                            <!-- Service Item -->
-                            <!-- Service Item -->
-                            <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
-                                <div class="relative mb-9 h-[70px] w-[70px]">
-                                    <img src="assets/img/th-1/service-icon-black-3.svg" alt="service-icon-black-3"
-                                        width="70" height="70" />
-                                    <img src="assets/img/th-1/service-icon-orange-3.svg" alt="service-icon-orange-3"
-                                        width="70" height="70"
-                                        class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100" />
-                                </div>
-                                <h3
-                                    class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
-                                    <a href="service-details.html" class="hover:text-colorOrangyRed">
-                                        Web-Based Access
-                                    </a>
-                                </h3>
-
-                                <p class="mb-12 duration-300 group-hover:text-white">
-                                    This is an excellent option for people & small businesses
-                                    who are starting out.
-                                </p>
-
-                                <a href="service-details.html"
-                                    class="relative inline-block h-[30px] w-[30px] duration-300">
-                                    <img src="assets/img/th-1/arrow-right-black.svg" alt="arrow-right-black" width="30"
-                                        height="30" />
-                                    <img src="assets/img/th-1/arrow-right-orange.svg" alt="arrow-right-black" width="30"
-                                        height="30"
-                                        class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100" />
-                                </a>
-                            </li>
-                            <!-- Service Item -->
-                            <!-- Service Item -->
-                            <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
-                                <div class="relative mb-9 h-[70px] w-[70px]">
-                                    <img src="assets/img/th-1/service-icon-black-4.svg" alt="service-icon-black-4"
-                                        width="70" height="70" />
-                                    <img src="assets/img/th-1/service-icon-orange-4.svg" alt="service-icon-orange-4"
-                                        width="70" height="70"
-                                        class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100" />
-                                </div>
-                                <h3
-                                    class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
-                                    <a href="service-details.html" class="hover:text-colorOrangyRed">
-                                        Resource Flexibility
-                                    </a>
-                                </h3>
-
-                                <p class="mb-12 duration-300 group-hover:text-white">
-                                    This is an excellent option for people & small businesses
-                                    who are starting out.
-                                </p>
-
-                                <a href="service-details.html"
-                                    class="relative inline-block h-[30px] w-[30px] duration-300">
-                                    <img src="assets/img/th-1/arrow-right-black.svg" alt="arrow-right-black" width="30"
-                                        height="30" />
-                                    <img src="assets/img/th-1/arrow-right-orange.svg" alt="arrow-right-black" width="30"
-                                        height="30"
-                                        class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100" />
-                                </a>
-                            </li>
-                            <!-- Service Item -->
-                        </ul>
-                        <!-- Service List -->
                     </div>
-                    <!-- Section Container -->
                 </div>
-                <!-- Section Spacer -->
             </section>
-            <!--...::: Service Section End :::... -->
+            <!--...::: Content Section Start :::... -->
+            <section class="bg-[#FFFFFE]">
+                <div class="global-container py-20 md:py-32">
+                    <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12 lg:gap-20">
+
+                        <!-- Imagem à esquerda -->
+                        <div class="jos" data-jos_animation="fade-up">
+                            <img src="assets/img/th-2/DSC_0684.jpeg.jpg" alt="Youth Meraki Chat Demo"
+                                class="w-full max-w-[760px] mx-auto drop-shadow-lg rounded-lg" />
+                        </div>
+
+                        <!-- Conteúdo à direita -->
+                        <div class="jos" data-jos_animation="fade-right">
+                            <h2
+                                class="font-clashDisplay text-4xl font-medium text-[#020826] leading-[1.05] sm:text-[44px] lg:text-[56px] xl:text-[75px] mb-6">
+                                Estás pronto para te <span class="text-[#8C785C]">desafiar?</span>
+                            </h2>
+
+
+                            <p class="text-[#020826] text-lg leading-relaxed mb-4">
+                                Acreditamos que a transformação começa com acção. No Youth Meraki Summit vais aprender,
+                                viver e
+                                sentir cada momento como uma oportunidade de crescer e inspirar.
+                            </p>
+
+                            <!-- Lista com bullets circulares -->
+                            <ul class="space-y-4 text-lg font-medium leading-relaxed">
+                                <li
+                                    class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-2 before:h-3 before:w-3 before:rounded-full before:bg-[#8C785C]">
+                                    <span class="text-[#8C785C]">Explora</span> o teu potencial escondido
+                                </li>
+                                <li
+                                    class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-2 before:h-3 before:w-3 before:rounded-full before:bg-[#8C785C]">
+                                    <span class="text-[#8C785C]">Desafia</span> os teus limites pessoais
+                                </li>
+                                <li
+                                    class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-2 before:h-3 before:w-3 before:rounded-full before:bg-[#8C785C]">
+                                    <span class="text-[#8C785C]">Conecta-te</span> com quem partilha os mesmos sonhos
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="global-container">
+                <div class="h-[1.5px] w-full bg-[#8C785C]"></div>
+            </div>
+
+
+
+
+            <!--...::: Content Section End :::... -->
 
             <!--...::: Content Section Start :::... -->
-            <section id="content-section-1">
+
+
+
+
+            <!--...::: Content Section End :::... -->
+
+            <!--...::: Content Section Start :::... -->
+            <section hidden id="content-section-3">
                 <!-- Section Spacer -->
-                <div class="pb-20 xl:pb-[150px]">
+                <div class="pb-20 md:pb-36 lg:pb-28 xl:pb-[150px]">
                     <!-- Section Container -->
                     <div class="global-container">
-                        <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:gap-28 xxl:gap-32">
+                        <div
+                            class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_.8fr)_1fr] xl:gap-28 xxl:gap-[134px]">
                             <!-- Content Left Block -->
-                            <div class="jos order-2 overflow-hidden rounded-md md:order-1"
-                                data-jos_animation="fade-left">
-                                <img src="assets/img/th-1/content-image-1.jpg" alt="content-image-1" width="526"
-                                    height="450" class="h-auto w-full" />
+                            <div class="jos order-2 mt-16 rounded-md md:order-1 md:mt-0" data-jos_animation="fade-up">
+                                <div
+                                    class="relative h-[494px] rounded-tl-[20px] rounded-tr-[20px] bg-[url('../img/th-2/content-shape.jpg')] bg-cover bg-no-repeat">
+                                    <img src="assets/img/th-2/th2-content-img-3.png" alt="th2-content-img-3.png"
+                                        width="320" height="564"
+                                        class="absolute bottom-0 left-1/2 h-[564px] w-[320px] -translate-x-1/2" />
+                                </div>
                             </div>
                             <!-- Content Left Block -->
                             <!-- Content Right Block -->
                             <div class="jos order-1 md:order-2" data-jos_animation="fade-right">
                                 <!-- Section Content Block -->
                                 <div class="mb-6">
-                                    <h2>Accessible to a wider audience</h2>
+                                    <h2
+                                        class="font-clashDisplay text-4xl font-medium leading-[1.06] sm:text-[44px] lg:text-[56px] xl:text-[75px]">
+                                        Always provide the best answer
+                                    </h2>
                                 </div>
                                 <!-- Section Content Block -->
-                                <div class="text-lg leading-[1.4] lg:text-[21px]">
+                                <div class="mb-12 text-lg leading-[1.66]">
                                     <p class="mb-7 last:mb-0">
-                                        Advanced AI capabilities accessible to a broader audience,
-                                        including small & medium-sized businesses and individuals
-                                        who may not have the resources or expertise to develop.
+                                        AI chatbots are designed to give accurate & relevant
+                                        answers to the best of their abilities based on the
+                                        information they are trained and algorithms to ensure
+                                        high-quality responses.
                                     </p>
                                     <p class="mb-7 last:mb-0">
-                                        Advanced AI capabilities accessible to a broader audience,
-                                        including small & medium-sized businesses and individuals
-                                        who may not have the resources or expertise to develop.
+                                        Our chatbot responses is influenced by the quality and
+                                        well-trained chatbots are more likely to provide better
+                                        answers.
                                     </p>
                                 </div>
+                                <a href="https://www.example.com"
+                                    class="button relative z-[1] inline-flex items-center gap-3 rounded-[50px] border-none bg-colorViolet py-[18px] text-white after:bg-colorOrangyRed hover:text-white">Try
+                                    It Now
+                                    <img src="assets/img/th-2/icon-white-long-arrow-right.svg"
+                                        alt="icon-white-long-arrow-right" /></a>
                             </div>
                             <!-- Content Right Block -->
                         </div>
@@ -510,814 +449,1138 @@
             <!--...::: Content Section End :::... -->
 
             <!--...::: Content Section Start :::... -->
-            <section id="content-section-2">
-                <!-- Section Spacer -->
-                <div class="pb-20 xl:pb-[150px]">
-                    <!-- Section Container -->
-                    <div class="global-container">
-                        <div
-                            class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_1.2fr)_1fr] xl:gap-28 xxl:gap-32">
-                            <!-- Content Left Block -->
-                            <div class="jos order-2 overflow-hidden rounded-md" data-jos_animation="fade-left">
-                                <img src="assets/img/th-1/content-image-2.jpg" alt="content-image-2" width="526"
-                                    height="450" class="h-auto w-full" />
-                            </div>
-                            <!-- Content Left Block -->
-                            <!-- Content Right Block -->
-                            <div class="jos order-1" data-jos_animation="fade-right">
-                                <!-- Section Content Block -->
-                                <div class="mb-6">
-                                    <h2>Providing quick deploy solutions</h2>
-                                </div>
-                                <!-- Section Content Block -->
-                                <div class="text-lg leading-[1.4] lg:text-[21px]">
-                                    <p class="mb-7 last:mb-0">
-                                        Our AI SaaS solutions can be quickly deployed, enabling
-                                        users to start benefiting from AI capabilities without
-                                        lengthy setup and development times in fast-paced
-                                        industries.
+            <section id="content-intregrates-section">
+                <div class="relative z-[1] overflow-hidden bg-colorCodGray text-white">
+                    <div class="py-20 xl:py-[130px]">
+                        <div class="global-container">
+                            <div
+                                class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 xl:grid-cols-[minmax(0,_1fr)_.8fr] xl:gap-28 xxl:gap-[134px]">
+
+                                <!-- Texto institucional -->
+                                <div class="jos">
+                                    <h2
+                                        class="font-clashDisplay text-4xl font-medium leading-[1.06] text-white sm:text-[44px] lg:text-[56px] xl:text-[75px] mb-6">
+                                        Sobre a Youth Meraki</span>
+                                    </h2>
+                                    <p class="mb-7 text-lg text-justify">
+                                        A Youth Meraki é uma empresa criada por jovens Moçambicanos com
+                                        atuação
+                                        nacional e internacional.
+                                        O nosso foco está no empoderamento juvenil através da educação, orientação
+                                        académica,
+                                        mobilidade internacional
+                                        e liderança transformadora.
                                     </p>
-                                    <ul
-                                        class="flex flex-col gap-y-5 font-dmSans text-xl leading-tight tracking-tighter text-black lg:mt-12 lg:text-[28px]">
-                                        <li class="flex items-start gap-x-3">
-                                            <div class="mt-[2.5px] h-[30px] w-[30px]">
-                                                <img src="assets/img/th-1/check-circle.svg" alt="check-circle"
-                                                    width="30" height="30" class="h-full w-full" />
-                                            </div>
-                                            Ready-to-use AI capabilities system
-                                        </li>
-                                        <li class="flex items-start gap-x-3">
-                                            <div class="mt-[2.5px] h-[30px] w-[30px]">
-                                                <img src="assets/img/th-1/check-circle.svg" alt="check-circle"
-                                                    width="30" height="30" class="h-full w-full" />
-                                            </div>
-                                            Users can quickly integrate AI features
-                                        </li>
-                                        <li class="flex items-start gap-x-3">
-                                            <div class="mt-[2.5px] h-[30px] w-[30px]">
-                                                <img src="assets/img/th-1/check-circle.svg" alt="check-circle"
-                                                    width="30" height="30" class="h-full w-full" />
-                                            </div>
-                                            Time savings translate to cost savings
-                                        </li>
-                                    </ul>
+                                    <p class="mb-7 text-lg text-justify">
+                                        Acreditamos numa geração mais forte, resiliente, empoderada e conectada, capaz
+                                        de
+                                        transformar sonhos em conquistas reais.
+                                        A nossa missão é empoderar jovens e transformar aspirações em sucesso tangível,
+                                        promovendo
+                                        os valores de
+                                        Educação, Inclusão,
+                                        Excelência,
+                                        Cooperação e Integridade.
+                                    </p>
                                 </div>
+
+                                <!-- Cartão de impacto -->
+                                <!-- Cartão com frase impactante e fundo restaurado -->
+                                <div
+                                    class="relative rounded-[30px] p-10 bg-[#D3AE91] shadow-2xl flex flex-col justify-center items-center text-center h-[320px]">
+                                    <blockquote
+                                        class="text-[#020826] text-xl lg:text-2xl font-medium italic leading-snug mb-4">
+                                        "A Juventude é a Força Motriz da Revolução."
+                                    </blockquote>
+                                    <span class="text-md italic text-[#020826]/80">— Samora Machel</span>
+                                </div>
+
+
                             </div>
-                            <!-- Content Right Block -->
+                        </div>
+
+                        <!-- Brilho no fundo -->
+                        <div
+                            class="absolute left-1/2 top-[80%] -z-[1] h-[1280px] w-[1280px] -translate-x-1/2 rounded-full bg-gradient-to-t from-[#D3AE91] to-[#020826] blur-[250px]">
                         </div>
                     </div>
-                    <!-- Section Container -->
                 </div>
-                <!-- Section Spacer -->
             </section>
+
+            <section id="promo-section">
+                <div class="pb-20 pt-20 xl:pb-[130px] xl:pt-[150px]">
+                    <div class="global-container">
+                        <!-- Section Content Block -->
+                        <div
+                            class="jos mx-auto mb-10 text-center md:mb-16 md:max-w-xl lg:mb-20 lg:max-w-3xl xl:max-w-[1000px]">
+                            <h2
+                                class="font-raleway text-4xl font-medium leading-[1.04] text-[#020826] sm:text-[44px] lg:text-[54px] xl:text-[75px]">
+                                Tema: Stronger Generation <br class="hidden sm:block" />
+                            </h2>
+                        </div>
+                        <!-- Section Content Block -->
+
+                        <!-- Promo List -->
+                        <ul class="grid gap-x-6 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
+                            <!-- Promo Item 1 -->
+                            <li class="jos text-center md:text-left" data-jos_delay="0.1">
+                                <div
+                                    class="mx-auto mb-[30px] inline-flex h-10 w-auto justify-center md:justify-normal xxl:h-[60px] text-[#8C785C]">
+                                    <img src="assets/img/th-3/icon-black-promo-1.svg" alt="ícone" width="60" height="60"
+                                        class="h-full w-auto filter brightness-0 invert-[.25] sepia-[.7] hue-rotate-[330deg] saturate-[4]" />
+                                </div>
+                                <div
+                                    class="mb-5 font-raleway text-2xl font-bold leading-[1.33] text-[#020826] xl:text-3xl">
+                                    O Significado
+                                </div>
+                                <p class="text-lg leading-[1.42] xl:text-[21px] text-[#020826]">
+                                    Stronger Generation representa a urgência de formarmos jovens preparados para romper
+                                    ciclos de
+                                    fragilidade e assumirem o protagonismo da transformação social.
+                                </p>
+                            </li>
+
+                            <!-- Promo Item 2 -->
+                            <li class="jos text-center md:text-left" data-jos_delay="0.2">
+                                <div
+                                    class="mx-auto mb-[30px] inline-flex h-10 w-auto justify-center md:justify-normal xxl:h-[60px] text-[#8C785C]">
+                                    <img src="assets/img/th-3/icon-black-promo-2.svg" alt="ícone" width="70" height="60"
+                                        class="h-full w-auto filter brightness-0 invert-[.25] sepia-[.7] hue-rotate-[330deg] saturate-[4]" />
+                                </div>
+                                <div
+                                    class="mb-5 font-raleway text-2xl font-bold leading-[1.33] text-[#020826] xl:text-3xl">
+                                    O Lema Inspirador
+                                </div>
+                                <p class="text-lg leading-[1.42] xl:text-[21px] text-[#020826]">
+                                    “Tempos fáceis criam pessoas fracas, pessoas fracas criam tempos difíceis, tempos
+                                    difíceis criam
+                                    pessoas fortes, e pessoas fortes criam tempos fáceis.”
+                                </p>
+                            </li>
+
+                            <!-- Promo Item 3 -->
+                            <li class="jos text-center md:text-left" data-jos_delay="0.3">
+                                <div
+                                    class="mx-auto mb-[30px] inline-flex h-10 w-auto justify-center md:justify-normal xxl:h-[60px] text-[#8C785C]">
+                                    <img src="assets/img/th-3/icon-black-promo-3.svg" alt="ícone" width="67" height="60"
+                                        class="h-full w-auto filter brightness-0 invert-[.25] sepia-[.7] hue-rotate-[330deg] saturate-[4]" />
+                                </div>
+                                <div
+                                    class="mb-5 font-raleway text-2xl font-bold leading-[1.33] text-[#020826] xl:text-3xl">
+                                    Um Chamado à Juventude
+                                </div>
+                                <p class="text-lg leading-[1.42] xl:text-[21px] text-[#020826]">
+                                    Nesta edição de estreia, desafiamos os jovens moçambicanos a tornarem-se líderes
+                                    conscientes,
+                                    inovadores e comprometidos com a construção de um Moçambique mais forte.
+                                </p>
+                            </li>
+                        </ul>
+                        <!-- Promo List -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Actvidades -->
+            <section id="section-working-process">
+                <div class="bg-[#EDEDE0] px-5 sm:px-[50px]">
+                    <div class="relative z-[1] mx-auto max-w-full rounded-[20px] bg-black">
+                        <div class="py-16 sm:px-10 md:px-20 lg:py-20 xl:px-[100px] xl:py-[130px]">
+                            <div class="global-container">
+
+                                <!-- Título -->
+                                <div
+                                    class="jos mx-auto mb-10 text-center md:mb-16 md:max-w-xl lg:mb-20 lg:max-w-3xl xl:max-w-[1000px]">
+                                    <h2
+                                        class="font-raleway text-4xl font-medium leading-[1.06] text-white sm:text-[44px] lg:text-[56px] xl:text-[80px]">
+                                        Actividades do Evento
+                                    </h2>
+                                </div>
+
+                                <!-- Lista de Cards -->
+                                <div class="grid grid-flow-dense gap-6 lg:grid-cols-2 xl:grid-cols-3">
+
+                                    <!-- Card 1 -->
+                                    <div
+                                        class="col-span-1 flex flex-col gap-y-6 rounded-[10px] bg-[#121212] p-[30px] text-white">
+                                        <div class="h-14 w-14 text-[#8C785C]">
+                                            <svg class="w-full h-full" fill="none" stroke="currentColor"
+                                                stroke-width="2" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M9 17v-2a4 4 0 014-4h3M16 9V7a4 4 0 00-4-4H5a4 4 0 00-4 4v10a4 4 0 004 4h7a4 4 0 004-4v-1" />
+                                            </svg>
+                                        </div>
+                                        <h3
+                                            class="text-3xl lg:text-4xl font-bold text-[#8C785C] font-raleway leading-tight">
+                                            Palestras que despertam consciências
+                                        </h3>
+                                        <p class="text-lg leading-[1.66]">
+                                            Oradores inspiradores, com percursos transformadores, partilharão mensagens
+                                            que desafiam
+                                            a mentalidade atual e acendem a chama da responsabilidade individual e
+                                            coletiva. Estas
+                                            palestras vão guiar os participantes numa jornada de reflexão, liderança e
+                                            ação,
+                                            abordando temas como propósito, inovação, superação e impacto social.
+                                        </p>
+                                    </div>
+
+                                    <!-- Card 2 -->
+                                    <div
+                                        class="col-span-1 flex flex-col gap-y-6 rounded-[10px] bg-[#121212] p-[30px] text-white">
+                                        <div class="h-14 w-14 text-[#8C785C]">
+                                            <svg class="w-full h-full" fill="none" stroke="currentColor"
+                                                stroke-width="2" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M7 8h10M7 12h4m-2 4h2a2 2 0 002-2v-1m4-1V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2h6" />
+                                            </svg>
+                                        </div>
+                                        <h3
+                                            class="text-3xl lg:text-4xl font-bold text-[#8C785C] font-raleway leading-tight">
+                                            Painéis de discussão que confrontam a realidade
+                                        </h3>
+                                        <p class="text-lg leading-[1.66]">
+                                            Em cada painel, jovens líderes, especialistas e convidados especiais
+                                            sentam-se para um
+                                            diálogo profundo e autêntico sobre os desafios e oportunidades de
+                                            Moçambique. Vamos
+                                            abordar temas como juventude e desenvolvimento, educação, empreendedorismo,
+                                            tecnologia,
+                                            sustentabilidade e liderança. Mais do que ouvir, será um momento para pensar
+                                            criticamente e construir soluções reais.
+                                        </p>
+                                    </div>
+
+                                    <!-- Card 3 -->
+                                    <div
+                                        class="col-span-1 flex flex-col gap-y-6 rounded-[10px] bg-[#121212] p-[30px] text-white">
+                                        <div class="h-14 w-14 text-[#8C785C]">
+                                            <svg class="w-full h-full" fill="none" stroke="currentColor"
+                                                stroke-width="2" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M20 12H4m4 4l-4-4 4-4" />
+                                            </svg>
+                                        </div>
+                                        <h3
+                                            class="text-3xl lg:text-4xl font-bold text-[#8C785C] font-raleway leading-tight">
+                                            Dinâmicas que te tiram da zona de conforto
+                                        </h3>
+                                        <p class="text-lg leading-[1.66]">
+                                            Acreditamos que a transformação acontece através da experiência. Por isso,
+                                            preparamos
+                                            dinâmicas práticas, interativas e desafiadoras que vão estimular a
+                                            criatividade, a
+                                            autoconfiança, o trabalho em equipa e a empatia. Serás levado a pensar,
+                                            sentir e agir, de forma intencional e impactante.
+                                        </p>
+                                    </div>
+
+                                    <!-- Segunda Linha -->
+                                    <div class="col-span-full grid gap-6 lg:grid-cols-2 xl:grid-cols-2">
+
+                                        <!-- Card 4 -->
+                                        <div
+                                            class="flex flex-col gap-y-6 rounded-[10px] bg-[#121212] p-[30px] text-white">
+                                            <div class="h-14 w-14 text-[#8C785C]">
+                                                <svg class="w-full h-full" fill="none" stroke="currentColor"
+                                                    stroke-width="2" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M17 20h5v-2a4 4 0 00-4-4h-1m-6 0H6a4 4 0 00-4 4v2h5" />
+                                                    <circle cx="9" cy="7" r="4" />
+                                                    <circle cx="15" cy="7" r="4" />
+                                                </svg>
+                                            </div>
+                                            <h3
+                                                class="text-3xl lg:text-4xl font-bold text-[#8C785C] font-raleway leading-tight">
+                                                Networking que cria alianças para o futuro
+                                            </h3>
+                                            <p class="text-lg leading-[1.66]">
+                                                Este evento é uma oportunidade de te conectares com jovens comprometidos
+                                                como tu,
+                                                mentores experientes, líderes de organizações e empreendedores de várias
+                                                áreas.
+                                                Haverá espaços preparados para conversas significativas, partilhas de
+                                                contactos e
+                                                construção de relações que podem abrir portas e gerar colaboração a
+                                                longo prazo.
+                                            </p>
+                                        </div>
+
+                                        <!-- Card 5 -->
+                                        <div
+                                            class="flex flex-col gap-y-6 rounded-[10px] bg-[#121212] p-[30px] text-white">
+                                            <div class="h-14 w-14 text-[#8C785C]">
+                                                <svg class="w-full h-full" fill="none" stroke="currentColor"
+                                                    stroke-width="2" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M9 19V6l12-2v13" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M9 19c0 1.5 1 3 3 3s3-1.5 3-3" />
+                                                </svg>
+                                            </div>
+                                            <h3
+                                                class="text-3xl lg:text-4xl font-bold text-[#8C785C] font-raleway leading-tight">
+                                                Momentos culturais que celebram a nossa identidade
+                                            </h3>
+                                            <p class="text-lg leading-[1.66]">
+                                                Porque ser uma Stronger Generation também é honrar as nossas raízes,
+                                                teremos
+                                                performances culturais que destacam o talento, a criatividade e a beleza
+                                                da
+                                                juventude moçambicana. Música, teatro, poesia e outras expressões
+                                                artísticas que
+                                                tocam o coração, inspiram a alma e unem-nos como povo.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Linhas decorativas -->
+                        <div class="absolute left-0 top-0 -z-[1] flex h-full w-full justify-evenly">
+                            <div class="h-full w-[1px] bg-[#121212]"></div>
+                            <div class="h-full w-[1px] bg-[#121212]"></div>
+                            <div class="h-full w-[1px] bg-[#121212]"></div>
+                            <div class="h-full w-[1px] bg-[#121212]"></div>
+                            <div class="h-full w-[1px] bg-[#121212]"></div>
+                            <div class="h-full w-[1px] bg-[#121212]"></div>
+                            <div class="h-full w-[1px] bg-[#121212]"></div>
+                            <div class="h-full w-[1px] bg-[#121212]"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="team-section">
+                <div class="py-20 xl:py-[130px]">
+                    <div class="global-container">
+                        <div class="jos mb-10 text-center md:mb-16 xl:mb-20">
+                            <h2
+                                class="font-raleway text-4xl sm:text-[44px] lg:text-[56px] xl:text-[75px] leading-tight text-[#020826]">
+                                Os Nossos Oradores
+                            </h2>
+                        </div>
+
+                        <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                            <!-- Orador 1 -->
+                            <li class="jos rounded-[20px] bg-colorLinenRuffle p-[20px]" data-jos_animation="flip"
+                                data-jos_delay="0.1">
+                                <div class="aspect-[3/4] w-full overflow-hidden rounded-[20px]">
+                                    <img src="assets/img/th-2/Photos40.jpg" alt="Shirley Mutevuie"
+                                        class="h-full w-full object-cover object-top" />
+                                </div>
+                                <div class="mt-5">
+                                    <p
+                                        class="font-dmSans text-[26px] xxl:text-[30px] leading-[1.33] transition-colors hover:text-[#8C785C]">
+                                        Shirley Mutevuie
+                                    </p>
+                                    <div class="mt-3 flex flex-col justify-between gap-3 xxl:flex-row xxl:items-center">
+                                        <span class="text-[21px]">Fundadora da Youth Meraki</span>
+                                        <ul class="mt-auto flex gap-x-[10px]">
+                                            <li>
+                                                <a href="https://www.linkedin.com/in/shirleymutevuie" target="_blank"
+                                                    class="group relative flex h-[26px] w-[26px] items-center justify-center rounded-full bg-black hover:bg-[#D3AE91]">
+                                                    <img src="assets/img/th-1/linkedin-icon-white.svg" alt="linkedin"
+                                                        class="w-[20px] h-[20px] opacity-100 group-hover:opacity-0" />
+                                                    <img src="assets/img/th-1/linkedin-icon-black.svg" alt="linkedin"
+                                                        class="absolute left-1/2 top-1/2 w-[20px] h-[20px] -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.instagram.com/shirleymutevuie" target="_blank"
+                                                    class="group relative flex h-[26px] w-[26px] items-center justify-center rounded-full bg-black hover:bg-[#D3AE91]">
+                                                    <img src="assets/img/th-1/instagram-icon-white.svg" alt="instagram"
+                                                        class="w-[20px] h-[20px] opacity-100 group-hover:opacity-0" />
+                                                    <img src="assets/img/th-1/instagram-icon-black.svg" alt="instagram"
+                                                        class="absolute left-1/2 top-1/2 w-[20px] h-[20px] -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100" />
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Orador 2 -->
+                            <li class="jos rounded-[20px] bg-colorLinenRuffle p-[20px]" data-jos_animation="flip"
+                                data-jos_delay="0.2">
+                                <div class="aspect-[3/4] w-full overflow-hidden rounded-[20px]">
+                                    <img src="assets/img/th-2/Photos40.jpg" alt="Locarla Mutevuie"
+                                        class="h-full w-full object-cover object-top" />
+                                </div>
+                                <div class="mt-5">
+                                    <p
+                                        class="font-dmSans text-[26px] xxl:text-[30px] leading-[1.33] transition-colors hover:text-[#8C785C]">
+                                        Locarla Mutevuie
+                                    </p>
+                                    <div class="mt-3 flex flex-col justify-between gap-3 xxl:flex-row xxl:items-center">
+                                        <span class="text-[21px]">Fundadora da Youth Meraki</span>
+                                        <ul class="mt-auto flex gap-x-[10px]">
+                                            <li>
+                                                <a href="https://www.linkedin.com/in/locarlamutevuie" target="_blank"
+                                                    class="group relative flex h-[26px] w-[26px] items-center justify-center rounded-full bg-black hover:bg-[#D3AE91]">
+                                                    <img src="assets/img/th-1/linkedin-icon-white.svg" alt="linkedin"
+                                                        class="w-[20px] h-[20px] opacity-100 group-hover:opacity-0" />
+                                                    <img src="assets/img/th-1/linkedin-icon-black.svg" alt="linkedin"
+                                                        class="absolute left-1/2 top-1/2 w-[20px] h-[20px] -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.instagram.com/locarlamutevuie" target="_blank"
+                                                    class="group relative flex h-[26px] w-[26px] items-center justify-center rounded-full bg-black hover:bg-[#D3AE91]">
+                                                    <img src="assets/img/th-1/instagram-icon-white.svg" alt="instagram"
+                                                        class="w-[20px] h-[20px] opacity-100 group-hover:opacity-0" />
+                                                    <img src="assets/img/th-1/instagram-icon-black.svg" alt="instagram"
+                                                        class="absolute left-1/2 top-1/2 w-[20px] h-[20px] -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100" />
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Orador 3 -->
+                            <li class="jos rounded-[20px] bg-colorLinenRuffle p-[20px]" data-jos_animation="flip"
+                                data-jos_delay="0.3">
+                                <div class="aspect-[3/4] w-full overflow-hidden rounded-[20px]">
+                                    <img src="assets/img/th-2/Photos40.jpg" alt="Arafat Cossa"
+                                        class="h-full w-full object-cover object-top" />
+                                </div>
+                                <div class="mt-5">
+                                    <p
+                                        class="font-dmSans text-[26px] xxl:text-[30px] leading-[1.33] transition-colors hover:text-[#8C785C]">
+                                        Arafat Cossa
+                                    </p>
+                                    <div class="mt-3 flex flex-col justify-between gap-3 xxl:flex-row xxl:items-center">
+                                        <span class="text-[21px]">Oficial de Comunicação</span>
+                                        <ul class="mt-auto flex gap-x-[10px]">
+                                            <li>
+                                                <a href="https://www.linkedin.com/in/arafatcossa" target="_blank"
+                                                    class="group relative flex h-[26px] w-[26px] items-center justify-center rounded-full bg-black hover:bg-[#D3AE91]">
+                                                    <img src="assets/img/th-1/linkedin-icon-white.svg" alt="linkedin"
+                                                        class="w-[20px] h-[20px] opacity-100 group-hover:opacity-0" />
+                                                    <img src="assets/img/th-1/linkedin-icon-black.svg" alt="linkedin"
+                                                        class="absolute left-1/2 top-1/2 w-[20px] h-[20px] -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.instagram.com/arafatcossa" target="_blank"
+                                                    class="group relative flex h-[26px] w-[26px] items-center justify-center rounded-full bg-black hover:bg-[#D3AE91]">
+                                                    <img src="assets/img/th-1/instagram-icon-white.svg" alt="instagram"
+                                                        class="w-[20px] h-[20px] opacity-100 group-hover:opacity-0" />
+                                                    <img src="assets/img/th-1/instagram-icon-black.svg" alt="instagram"
+                                                        class="absolute left-1/2 top-1/2 w-[20px] h-[20px] -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100" />
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="pacotes-section" class="bg-[#FFFFFE]">
+                <div class="xl:py-[30px] mb-28 xl:mb-[130px]">
+                    <div class="global-container">
+                        <!-- Título -->
+                        <div class="jos mb-10 text-center md:mb-16 xl:mb-20">
+                            <h2
+                                class="font-raleway text-4xl sm:text-[44px] lg:text-[56px] xl:text-[75px] leading-tight text-[#020826]">
+                                Os Nossos Pacotes
+                            </h2>
+                        </div>
+
+                        <!-- Lista de Pacotes -->
+                        <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+                            <!-- Card Template -->
+                            <li class="jos group rounded-[16px] bg-[#F7F4F0] shadow-md p-10 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl"
+                                data-jos_animation="flip">
+                                <div class="mb-4 flex justify-center">
+                                    <svg class="w-14 h-14 text-[#8C785C] transition group-hover:text-[#D3AE91]"
+                                        fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2" />
+                                    </svg>
+                                </div>
+                                <h3
+                                    class="text-center font-dmSans text-[28px] font-bold text-[#020826] group-hover:text-[#D3AE91] transition">
+                                    Ticket Essencial</h3>
+                                <p class="mt-2 text-center text-3xl font-bold text-[#8C785C]">1500 MZN</p>
+                                <hr class="my-6 border-[#DBD6CF]">
+                                <ul class="space-y-3 text-[17px] text-[#020826]">
+                                    <li class="flex items-center gap-2"><span class="text-green-600">✔</span> Acesso ao
+                                        evento
+                                        completo</li>
+                                    <li class="flex items-center gap-2"><span class="text-green-600">✔</span> Kit
+                                        oficial do evento
+                                        (Água, Agenda, Caneta)</li>
+                                    <li class="flex items-center gap-2"><span class="text-green-600">✔</span>
+                                        Certificado de
+                                        participação</li>
+                                    <li class="flex items-center gap-2"><span class="text-red-600">✘</span> Lugar
+                                        reservado</li>
+                                    <li class="flex items-center gap-2"><span class="text-red-600">✘</span> Sessão de
+                                        networking
+                                    </li>
+                                    <li class="flex items-center gap-2"><span class="text-red-600">✘</span> Lounge VIP +
+                                        Almoço</li>
+                                </ul>
+                            </li>
+
+                            <!-- Premium -->
+                            <li class="jos group rounded-[16px] bg-[#F7F4F0] shadow-md p-10 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl"
+                                data-jos_animation="flip" data-jos_delay="0.1">
+                                <div class="mb-4 flex justify-center">
+                                    <svg class="w-14 h-14 text-[#8C785C] transition group-hover:text-[#D3AE91]"
+                                        fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M16 7a4 4 0 01-8 0M5 20h14M4 15h16" />
+                                    </svg>
+                                </div>
+                                <h3
+                                    class="text-center font-dmSans text-[28px] font-bold text-[#020826] group-hover:text-[#D3AE91] transition">
+                                    Ticket Premium</h3>
+                                <p class="mt-2 text-center text-3xl font-bold text-[#8C785C]">3000 MZN</p>
+                                <hr class="my-6 border-[#DBD6CF]">
+                                <ul class="space-y-3 text-[17px] text-[#020826]">
+                                    <li class="flex items-center gap-2"><span class="text-green-600">✔</span> Acesso ao
+                                        evento
+                                        completo</li>
+                                    <li class="flex items-center gap-2"><span class="text-green-600">✔</span> Kit
+                                        oficial do evento
+                                    </li>
+                                    <li class="flex items-center gap-2"><span class="text-green-600">✔</span>
+                                        Certificado de
+                                        participação</li>
+                                    <li class="flex items-center gap-2"><span class="text-green-600">✔</span> Lugar
+                                        reservado</li>
+                                    <li class="flex items-center gap-2"><span class="text-green-600">✔</span> Sessão de
+                                        networking
+                                    </li>
+                                    <li class="flex items-center gap-2"><span class="text-red-600">✘</span> Lounge VIP +
+                                        Almoço</li>
+                                </ul>
+                            </li>
+
+                            <!-- VIP -->
+                            <li class="jos group rounded-[16px] bg-[#F7F4F0] shadow-md p-10 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl"
+                                data-jos_animation="flip" data-jos_delay="0.2">
+                                <div class="mb-4 flex justify-center">
+                                    <svg class="w-14 h-14 text-[#8C785C] transition group-hover:text-[#D3AE91]"
+                                        fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M4.75 4.75l14.5 14.5M19.25 4.75L4.75 19.25" />
+                                    </svg>
+                                </div>
+                                <h3
+                                    class="text-center font-dmSans text-[28px] font-bold text-[#020826] group-hover:text-[#D3AE91] transition">
+                                    Ticket VIP</h3>
+                                <p class="mt-2 text-center text-3xl font-bold text-[#8C785C]">5000 MZN</p>
+                                <hr class="my-6 border-[#DBD6CF]">
+                                <ul class="space-y-3 text-[17px] text-[#020826]">
+                                    <li class="flex items-center gap-2"><span class="text-green-600">✔</span> Acesso ao
+                                        evento
+                                        completo</li>
+                                    <li class="flex items-center gap-2"><span class="text-green-600">✔</span> Kit
+                                        oficial do evento
+                                    </li>
+                                    <li class="flex items-center gap-2"><span class="text-green-600">✔</span>
+                                        Certificado de
+                                        participação</li>
+                                    <li class="flex items-center gap-2"><span class="text-green-600">✔</span> Lugar
+                                        reservado nas
+                                        primeiras filas</li>
+                                    <li class="flex items-center gap-2"><span class="text-green-600">✔</span> Sessão de
+                                        networking
+                                    </li>
+                                    <li class="flex items-center gap-2"><span class="text-green-600">✔</span> Lounge VIP
+                                        com
+                                        alimentação</li>
+                                    <li class="flex items-center gap-2"><span class="text-green-600">✔</span> Almoço
+                                        exclusivo com
+                                        oradores</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
             <!--...::: Content Section End :::... -->
 
-            <!--...::: Funfact Section Start :::... -->
-            <section id="funfact-section">
-                <div class="mx-auto max-w-[1500px] px-5">
-                    <div
-                        class="jos grid grid-cols-1 overflow-hidden rounded-[30px] bg-black lg:rounded-[50px] xl:grid-cols-[minmax(400px,_1fr)_1.5fr] xxl:grid-cols-[1fr_minmax(800px,_1fr)]">
-                        <!-- Funfact Left Block -->
-                        <div class="relative overflow-hidden rounded-[30px] lg:rounded-[50px]">
-                            <img src="assets/img/th-1/funfact-image.jpg" alt="funfact-image" width="721" height="784"
-                                class="h-80 w-full object-cover object-center lg:h-[35rem] xl:h-full" />
-                            <!-- Video Play Button -->
-                            <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
-                                class="absolute left-1/2 top-1/2 z-[1] -translate-x-1/2 -translate-y-1/2">
-                                <div
-                                    class="relative flex h-[120px] w-[120px] items-center justify-center rounded-full border-[3px] border-black text-lg font-bold backdrop-blur-[2px] transition-all duration-300 hover:bg-colorOrangyRed hover:text-white">
-                                    Play
-                                    <div
-                                        class="absolute -z-[1] h-[110%] w-[110%] animate-[ping_1.5s_ease-in-out_infinite] rounded-full bg-gray-600 opacity-30">
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- Video Play Button -->
-                        </div>
-                        <!-- Funfacct Left Block -->
-
-                        <!-- Funfact Right Block -->
-                        <div
-                            class="self-center px-6 py-16 sm:py-20 md:px-16 xl:px-10 xl:py-24 xxl:py-32 xxl:pl-16 xxl:pr-28">
-                            <!-- Section Content Block -->
-                            <div class="mb-8 lg:mb-16 xl:mb-6">
-                                <h2 class="text-white">AI-powered that streamline tasks</h2>
-                            </div>
-                            <!-- Section Content Block -->
-                            <div class="text-left text-lg leading-[1.4] text-white lg:text-[21px]">
-                                <p class="mb-7 last:mb-0">
-                                    As your business grows or your AI SaaS needs change, you can
-                                    easily adjust your subscription level to match those needs.
-                                    This flexibility ensures that AI remains an asset.
-                                </p>
-                            </div>
-                            <!-- Horizontal Separator -->
-                            <div class="my-14 h-[1px] w-full bg-colorCodGray"></div>
-                            <!-- Counter Scroll -->
-                            <ul
-                                class="flex flex-col justify-center gap-x-11 gap-y-8 text-center sm:flex-row md:text-left xl:justify-normal xl:text-left xxl:gap-x-20">
-                                <!-- Counter Items -->
-                                <li>
-                                    <h3 class="text-5xl text-colorOrangyRed md:text-6xl lg:text-7xl xl:text-7xl xxl:text-[120px]"
-                                        data-module="countup">
-                                        <span class="start-number" data-countup-number="92">92</span>%
-                                    </h3>
-                                    <span class="block text-lg font-normal text-white lg:text-[21px]">
-                                        Customer service inquiries
-                                    </span>
-                                </li>
-                                <!-- Counter Items -->
-                                <!-- Counter Items -->
-                                <li>
-                                    <h3 class="text-5xl text-colorOrangyRed md:text-6xl lg:text-7xl xl:text-7xl xxl:text-[120px]"
-                                        data-module="countup">
-                                        <span class="start-number" data-countup-number="75">75</span>%
-                                    </h3>
-                                    <span class="block text-lg font-normal text-white lg:text-[21px]">
-                                        Using financial institutions
-                                    </span>
-                                </li>
-                                <!-- Counter Items -->
-                            </ul>
-                            <!-- Counter Scroll -->
-                        </div>
-                        <!-- Funfact Right Block -->
-                    </div>
-                </div>
-            </section>
-            <!--...::: Funfact Section End :::... -->
-
-            <!--...::: Pricing Section Start :::... -->
-            <section class="pricing-section">
+            <!--...::: Testimonial Section Start :::... -->
+            <section hidden id="testimonial-section">
                 <!-- Section Spacer -->
-                <div class="pb-20 pt-20 xl:pb-[150px] xl:pt-[130px]">
+                <div class="py-20 xl:py-[130px]">
                     <!-- Section Container -->
                     <div class="global-container">
                         <!-- Section Content Block -->
-                        <div class="jos mb-10 text-center lg:mb-12">
-                            <div class="mx-auto md:max-w-xs lg:max-w-xl xl:max-w-[746px]">
-                                <h2>Cost-effectively build any software</h2>
-                            </div>
+                        <div
+                            class="jos mx-auto mb-10 text-center md:mb-16 md:max-w-xl lg:mb-20 lg:max-w-3xl xl:max-w-[856px]">
+                            <h2
+                                class="font-clashDisplay text-4xl font-medium leading-[1.06] sm:text-[44px] lg:text-[56px] xl:text-[75px]">
+                                Check user reviews using our AI chatbot
+                            </h2>
                         </div>
                         <!-- Section Content Block -->
-                        <!-- Pricing Block -->
-                        <div class="container mx-auto">
-                            <!-- Tab buttons -->
-                            <div class="jos flex justify-center" data-jos_animation="fade">
-                                <div class="inline-flex space-x-4 rounded-[50px] border-2 border-black font-semibold">
-                                    <button class="tab-button price-button active" data-tab="monthly">
-                                        Monthly
-                                    </button>
-                                    <button class="tab-button price-button" data-tab="annually">
-                                        Annually
-                                    </button>
+
+                        <!-- Testimonial Carousel -->
+                        <!-- Slider main container -->
+                        <div class="jos swiper testimonial-slider relative z-[1]">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div
+                                        class="flex flex-col gap-x-16 md:flex-row lg:gap-x-28 items-center xxl:items-baseline xl:gap-x-[134px]">
+                                        <div
+                                            class="h-auto w-[300px] self-center overflow-hidden rounded-[10px] lg:w-[375px] xl:h-[494px] xl:w-[526px]">
+                                            <img src="assets/img/th-2/testimonial-user-img-1.jpg"
+                                                alt="testimonial-img-1" width="526" height="494"
+                                                class="h-full w-full object-cover" loading="lazy" />
+                                        </div>
+                                        <div class="mt-[30px] flex-1 text-center md:text-left">
+                                            <div
+                                                class="mb-5 font-clashDisplay text-2xl font-medium leading-[1.28] tracking-[1px] lg:mb-9 lg:text-[28px]">
+                                                “Easy to use AI Chatbot with many options”
+                                            </div>
+                                            <p class="mb-9 leading-[1.33] lg:mb-[50px] lg:text-lg xl:text-2xl">
+                                                I have been using AI chatbots for several chatbots for
+                                                the past year. I learned quickly and exploring the
+                                                tool, & asking questions to Slack support. The tool is
+                                                very easy user-friendly and the support group helps
+                                                quickly and thoroughly. Keep up the good work!
+                                            </p>
+
+                                            <div class="text-[21px] font-semibold leading-[1.42]">
+                                                -Henry Fayol
+                                                <span class="mt-1 block text-lg font-normal leading-[1.66]">Professional
+                                                    blog writer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div
+                                        class="flex flex-col gap-x-16 md:flex-row lg:gap-x-28 items-center xxl:items-baseline xl:gap-x-[134px]">
+                                        <div
+                                            class="h-auto w-[300px] self-center overflow-hidden rounded-[10px] lg:w-[375px] xl:h-[494px] xl:w-[526px]">
+                                            <img src="assets/img/th-2/testimonial-user-img-1.jpg"
+                                                alt="testimonial-img-1" width="526" height="494"
+                                                class="h-full w-full object-cover" loading="lazy" />
+                                        </div>
+                                        <div class="mt-[30px] flex-1 text-center md:text-left">
+                                            <div
+                                                class="mb-5 font-clashDisplay text-2xl font-medium leading-[1.28] tracking-[1px] lg:mb-9 lg:text-[28px]">
+                                                “Easy to use AI Chatbot with many options”
+                                            </div>
+                                            <p class="mb-9 leading-[1.33] lg:mb-[50px] lg:text-lg xl:text-2xl">
+                                                I have been using AI chatbots for several chatbots for
+                                                the past year. I learned quickly and exploring the
+                                                tool, & asking questions to Slack support. The tool is
+                                                very easy user-friendly and the support group helps
+                                                quickly and thoroughly. Keep up the good work!
+                                            </p>
+
+                                            <div class="text-[21px] font-semibold leading-[1.42]">
+                                                -Henry Fayol
+                                                <span class="mt-1 block text-lg font-normal leading-[1.66]">Professional
+                                                    blog writer</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <!-- Pricing Block -->
-                            <div class="mt-12 lg:mt-16 xl:mt-20">
-                                <!-- Price List -->
-                                <ul id="monthly"
-                                    class="tab-content grid grid-cols-1 gap-6 md:grid-cols-2 xxl:grid-cols-3">
-                                    <!-- Price Item -->
-                                    <li class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-10 transition-all duration-300 ease-linear hover:bg-black"
-                                        data-jos_animation="flip" data-jos_delay="0">
-                                        <h3
-                                            class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
-                                            Beginner
-                                        </h3>
-                                        <span
-                                            class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
-                                            to 10 members</span>
-
-                                        <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
-                                        <h4
-                                            class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
-                                            $25<span class="text-lg font-semibold">/Per month</span>
-                                        </h4>
-                                        <p
-                                            class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
-                                            This is an excellent option for people & small
-                                            businesses who are starting out.
-                                        </p>
-                                        <a href="pricing.html"
-                                            class="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white">Choose
-                                            the plan</a>
-                                    </li>
-                                    <!-- Price Item -->
-                                    <!-- Price Item -->
-                                    <li class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-10 transition-all duration-300 ease-linear hover:bg-black"
-                                        data-jos_animation="flip" data-jos_delay="0">
-                                        <h3
-                                            class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
-                                            Starter
-                                        </h3>
-                                        <span
-                                            class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
-                                            to 50 members</span>
-
-                                        <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
-                                        <h4
-                                            class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
-                                            $89<span class="text-lg font-semibold">/Per month</span>
-                                        </h4>
-                                        <p
-                                            class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
-                                            This plan is suitable for e-commerce stores as well as
-                                            professional blogs.
-                                        </p>
-                                        <a href="pricing.html"
-                                            class="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white">Choose
-                                            the plan</a>
-                                    </li>
-                                    <!-- Price Item -->
-                                    <!-- Price Item -->
-                                    <li class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-10 transition-all duration-300 ease-linear hover:bg-black"
-                                        data-jos_animation="flip" data-jos_delay="0">
-                                        <h3
-                                            class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
-                                            Pro
-                                        </h3>
-                                        <span
-                                            class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
-                                            to 100 members</span>
-
-                                        <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
-                                        <h4
-                                            class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
-                                            $199<span class="text-lg font-semibold">/Per month</span>
-                                        </h4>
-                                        <p
-                                            class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
-                                            Ideal for handling complicated projects enterprise-level
-                                            projects, and websites.
-                                        </p>
-                                        <a href="pricing.html"
-                                            class="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white">Choose
-                                            the plan</a>
-                                    </li>
-                                    <!-- Price Item -->
-                                </ul>
-                                <!-- Price List -->
-                                <!-- Price List -->
-                                <ul id="annually"
-                                    class="tab-content grid hidden grid-cols-1 gap-6 md:grid-cols-2 xxl:grid-cols-3">
-                                    <!-- Price Item -->
-                                    <li class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-10 transition-all duration-300 ease-linear hover:bg-black"
-                                        data-jos_animation="flip" data-jos_delay="0">
-                                        <h3
-                                            class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
-                                            Beginner
-                                        </h3>
-                                        <span
-                                            class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
-                                            to 10 members</span>
-
-                                        <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
-                                        <h4
-                                            class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
-                                            $240<span class="text-lg font-semibold">/Per year</span>
-                                        </h4>
-                                        <p
-                                            class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
-                                            This is an excellent option for people & small
-                                            businesses who are starting out.
-                                        </p>
-                                        <a href="pricing.html"
-                                            class="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white">Choose
-                                            the plan</a>
-                                    </li>
-                                    <!-- Price Item -->
-                                    <!-- Price Item -->
-                                    <li class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-10 transition-all duration-300 ease-linear hover:bg-black"
-                                        data-jos_animation="flip" data-jos_delay="0">
-                                        <h3
-                                            class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
-                                            Starter
-                                        </h3>
-                                        <span
-                                            class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
-                                            to 50 members</span>
-
-                                        <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
-                                        <h4
-                                            class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
-                                            $960<span class="text-lg font-semibold">/Per year</span>
-                                        </h4>
-                                        <p
-                                            class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
-                                            This plan is suitable for e-commerce stores as well as
-                                            professional blogs.
-                                        </p>
-                                        <a href="pricing.html"
-                                            class="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white">Choose
-                                            the plan</a>
-                                    </li>
-                                    <!-- Price Item -->
-                                    <!-- Price Item -->
-                                    <li class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-10 transition-all duration-300 ease-linear hover:bg-black"
-                                        data-jos_animation="flip" data-jos_delay="0">
-                                        <h3
-                                            class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
-                                            Pro
-                                        </h3>
-                                        <span
-                                            class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
-                                            to 100 members</span>
-
-                                        <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
-                                        <h4
-                                            class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
-                                            $1800<span class="text-lg font-semibold leading-none">/Per year</span>
-                                        </h4>
-                                        <p
-                                            class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
-                                            Ideal for handling complicated projects enterprise-level
-                                            projects, and websites.
-                                        </p>
-                                        <a href="pricing.html"
-                                            class="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white">Choose
-                                            the plan</a>
-                                    </li>
-                                    <!-- Price Item -->
-                                </ul>
-                                <!-- Price List -->
+                            <!-- If we need navigation buttons -->
+                            <div class="testimonial-nav">
+                                <div class="testimonial-nav-prev testimonial-nav-dir">
+                                    <img src="assets/img/th-2/icon-black-long-arrow-left.svg"
+                                        alt="icon-black-long-arrow-left" width="24" height="24" />
+                                    <img src="assets/img/th-2/icon-white-long-arrow-left.svg"
+                                        alt="icon-white-long-arrow-left" width="24" height="24" />
+                                </div>
+                                <div class="testimonial-nav-next testimonial-nav-dir">
+                                    <img src="assets/img/th-2/icon-black-long-arrow-right.svg"
+                                        alt="icon-black-long-arrow-right" width="24" height="24" />
+                                    <img src="assets/img/th-2/icon-white-long-arrow-right.svg"
+                                        alt="icon-white-long-arrow-right" width="24" height="24" />
+                                </div>
                             </div>
-                            <!-- Pricing Block -->
                         </div>
+                        <!-- Testimonial Carousel -->
                     </div>
                     <!-- Section Container -->
                 </div>
                 <!-- Section Spacer -->
             </section>
-            <!--...::: Pricing Section End :::... -->
+            <!--...::: Testimonial Section Start :::... -->
+
+            <!-- Separator -->
+            <div hidden class="global-container">
+                <div class="h-[1px] w-full bg-[#EAEDF0]"></div>
+            </div>
+            <!-- Separator -->
+
+            <!--...::: Blog Section Start :::... -->
+            <div hidden id="blog-section">
+                <!-- Section Spacer -->
+                <div class="py-20 xl:py-[130px]">
+                    <!-- Section Container -->
+                    <div class="global-container">
+                        <!-- Section Content Block -->
+                        <div
+                            class="jos mx-auto mb-10 text-center md:mb-16 md:max-w-xl lg:mx-0 lg:mb-20 lg:max-w-[636px] lg:text-left">
+                            <h2
+                                class="font-clashDisplay text-4xl font-medium leading-[1.06] sm:text-[44px] lg:text-[56px] xl:text-[75px]">
+                                Find out more in our recent blogs
+                            </h2>
+                        </div>
+                        <!-- Section Content Block -->
+
+                        <!-- Blog List -->
+                        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+                            <!-- Blog Post Single Item -->
+                            <article
+                                class="jos group overflow-hidden rounded-[10px] bg-white shadow-[0_4px_80px_rgba(0,0,0,0.08)]"
+                                data-jos_delay="0.1">
+                                <!-- Blog Image -->
+                                <a href="blog-details.html"
+                                    class="block h-[320px] w-full overflow-hidden rounded-[30px]">
+                                    <img src="assets/img/th-1/blog-main-1.jpg" alt="blog-main-1" width="416"
+                                        height="320"
+                                        class="h-full w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105" />
+                                </a>
+                                <!-- Blog Image -->
+                                <!-- Blog Content -->
+                                <div class="p-6">
+                                    <h5
+                                        class="mb-7 font-clashDisplay font-medium leading-[1.28] tracking-[1px] text-[28] hover:text-colorViolet">
+                                        <a href="blog-details.html">
+                                            AI Chatbot: It essential for customer self-service</a>
+                                    </h5>
+                                    <div class="flex items-center justify-between gap-x-4">
+                                        <span>23 June 2024</span>
+                                        <a href="blog-details.html" class="h-[30px] w-[30px]">
+                                            <img src="assets/img//th-2/icon-blue-long-arrow-right.svg"
+                                                alt="icon-blue-long-arrow-right" width="30" height="30"
+                                                class="transition-all duration-300 group-hover:-rotate-45" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Blog Content -->
+                            </article>
+                            <!-- Blog Post Single Item -->
+                            <!-- Blog Post Single Item -->
+                            <article
+                                class="jos group overflow-hidden rounded-[10px] bg-white shadow-[0_4px_80px_rgba(0,0,0,0.08)]"
+                                data-jos_delay="0.2">
+                                <!-- Blog Image -->
+                                <a href="blog-details.html"
+                                    class="block h-[320px] w-full overflow-hidden rounded-[30px]">
+                                    <img src="assets/img/th-1/blog-main-2.jpg" alt="blog-main-2" width="416"
+                                        height="320"
+                                        class="h-full w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105" />
+                                </a>
+                                <!-- Blog Image -->
+                                <!-- Blog Content -->
+                                <div class="p-6">
+                                    <h5
+                                        class="mb-7 font-clashDisplay font-medium leading-[1.28] tracking-[1px] text-[28] hover:text-colorViolet">
+                                        <a href="blog-details.html">
+                                            How to build your own AI chatbot with custom data</a>
+                                    </h5>
+                                    <div class="flex items-center justify-between gap-x-4">
+                                        <span>20 June 2024</span>
+                                        <a href="blog-details.html" class="h-[30px] w-[30px]">
+                                            <img src="assets/img//th-2/icon-blue-long-arrow-right.svg"
+                                                alt="icon-blue-long-arrow-right" width="30" height="30"
+                                                class="transition-all duration-300 group-hover:-rotate-45" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Blog Content -->
+                            </article>
+                            <!-- Blog Post Single Item -->
+                            <!-- Blog Post Single Item -->
+                            <article
+                                class="jos group overflow-hidden rounded-[10px] bg-white shadow-[0_4px_80px_rgba(0,0,0,0.08)]"
+                                data-jos_delay="0.3">
+                                <!-- Blog Image -->
+                                <a href="blog-details.html"
+                                    class="block h-[320px] w-full overflow-hidden rounded-[30px]">
+                                    <img src="assets/img/th-1/blog-main-3.jpg" alt="blog-main-3" width="416"
+                                        height="320"
+                                        class="h-full w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105" />
+                                </a>
+                                <!-- Blog Image -->
+                                <!-- Blog Content -->
+                                <div class="p-6">
+                                    <h5
+                                        class="mb-7 font-clashDisplay font-medium leading-[1.28] tracking-[1px] text-[28] hover:text-colorViolet">
+                                        <a href="blog-details.html">
+                                            8 best AI chatbot tools for boost your business</a>
+                                    </h5>
+                                    <div class="flex items-center justify-between gap-x-4">
+                                        <span>18 June 2024</span>
+                                        <a href="blog-details.html" class="h-[30px] w-[30px]">
+                                            <img src="assets/img//th-2/icon-blue-long-arrow-right.svg"
+                                                alt="icon-blue-long-arrow-right" width="30" height="30"
+                                                class="transition-all duration-300 group-hover:-rotate-45" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Blog Content -->
+                            </article>
+                            <!-- Blog Post Single Item -->
+                        </div>
+                        <!-- Blog List -->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Spacer -->
+            </div>
+            <!--...::: Blog Section Start :::... -->
 
             <!--...::: FAQ Section Start :::... -->
-            <section class="faq-section">
+            <section hidden id="faq-section">
                 <!-- Section Spacer -->
-                <div class="pb-20 xl:pb-[150px]">
+                <div class="pb-40 xl:pb-[220px]">
                     <!-- Section Container -->
                     <div class="global-container">
-                        <div class="grid grid-cols-1 gap-y-10 md:grid-cols-2">
-                            <!-- FAQ Left Block -->
-                            <div class="jos flex flex-col" data-jos_animation="fade-right">
-                                <!-- Section Content Block -->
-                                <div class="mb-6">
-                                    <div class="mx-auto md:mx-0 md:max-w-none">
-                                        <h2>Freely ask us for more information</h2>
+                        <!-- Section Content Block -->
+                        <div
+                            class="jos mx-auto mb-10 text-center md:mb-16 md:max-w-xl lg:mb-20 lg:max-w-3xl xl:max-w-[856px]">
+                            <h2
+                                class="font-clashDisplay text-4xl font-medium leading-[1.06] sm:text-[44px] lg:text-[56px] xl:text-[75px]">
+                                AI Chatbot FAQs for more information
+                            </h2>
+                        </div>
+                        <!-- Section Content Block -->
+                        <!-- Accordion-->
+                        <ul class="accordion flex flex-col gap-y-6">
+                            <!-- Accordion items -->
+                            <li class="jos accordion-item is-3 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px] active"
+                                data-jos_delay="0.1">
+                                <div class="accordion-header flex items-center justify-between">
+                                    <h5
+                                        class="font-clashDisplay text-xl font-medium leading-[1.2] tracking-[1px] lg:text-[28px]">
+                                        What is Artificial Intelligence (AI)?
+                                    </h5>
+                                    <div class="accordion-icon is-blue">
+                                        <img src="assets/img/plus.svg" alt="plus" />
+                                        <img src="assets/img/plus-white.svg" alt="plus-white" />
                                     </div>
                                 </div>
-                                <!-- Section Content Block -->
-                                <div class="text-lg leading-[1.4] lg:text-[21px]">
-                                    <p class="mb-7 last:mb-0">
-                                        Our AI SaaS solutions can be quickly deployed, enabling
-                                        users to start benefiting from AI capabilities without
-                                        lengthy setup and development times in fast-paced
-                                        industries.
+                                <div class="accordion-content text-lg text-[#2C2C2C]">
+                                    <p>
+                                        AI chatbots work by analyzing user input, understanding
+                                        the intent behind the message, and providing relevant
+                                        responses based on pre-defined rules or machine learning
+                                        models. They can learn from user interactions to improve
+                                        over time.
                                     </p>
-                                    <a href="faq.html"
-                                        class="button mt-5 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white">Ask
-                                        you questions</a>
                                 </div>
-                            </div>
-                            <!-- FAQ Left Block -->
-
-                            <!-- FAQ Right Block -->
-                            <div class="jos md:ml-10 lg:ml-20 xl:ml-32" data-jos_animation="fade-left">
-                                <!-- Accordion-->
-                                <ul class="accordion">
-                                    <!-- Accordion items -->
-                                    <li
-                                        class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0 active">
-                                        <div
-                                            class="accordion-header flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]">
-                                            <p>How do I start AI SaaS?</p>
-                                            <div class="accordion-icon">
-                                                <img src="assets/img/plus.svg" alt="plus" />
-                                            </div>
-                                        </div>
-                                        <div class="accordion-content text-[#2C2C2C]">
-                                            <p>
-                                                Go to the our official website and require users to
-                                                create an account. You'll need to provide some basic
-                                                information and agree to our terms and conditions.
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <!-- Accordion items -->
-                                    <!-- Accordion items -->
-                                    <li
-                                        class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0">
-                                        <div
-                                            class="accordion-header flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]">
-                                            <p>Can I customize AI SaaS solutions?</p>
-                                            <div class="accordion-icon">
-                                                <img src="assets/img/plus.svg" alt="plus" />
-                                            </div>
-                                        </div>
-                                        <div class="accordion-content text-[#2C2C2C]">
-                                            <p>
-                                                Go to the our official website and require users to
-                                                create an account. You'll need to provide some basic
-                                                information and agree to our terms and conditions.
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <!-- Accordion items -->
-                                    <!-- Accordion items -->
-                                    <li
-                                        class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0">
-                                        <div
-                                            class="accordion-header flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]">
-                                            <p>How can AI benefit my business?</p>
-                                            <div class="accordion-icon">
-                                                <img src="assets/img/plus.svg" alt="plus" />
-                                            </div>
-                                        </div>
-                                        <div class="accordion-content text-[#2C2C2C]">
-                                            <p>
-                                                Go to the our official website and require users to
-                                                create an account. You'll need to provide some basic
-                                                information and agree to our terms and conditions.
-                                            </p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <!-- Accordion-->
-                            </div>
-                            <!-- FAQ Right Block -->
-                        </div>
+                            </li>
+                            <!-- Accordion items -->
+                            <!-- Accordion items -->
+                            <li class="jos accordion-item is-3 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px]"
+                                data-jos_delay="0.1">
+                                <div class="accordion-header flex items-center justify-between">
+                                    <h5
+                                        class="font-clashDisplay text-xl font-medium leading-[1.2] tracking-[1px] lg:text-[28px]">
+                                        What are the benefits of using AI chatbots?
+                                    </h5>
+                                    <div class="accordion-icon is-blue">
+                                        <img src="assets/img/plus.svg" alt="plus" />
+                                        <img src="assets/img/plus-white.svg" alt="plus-white" />
+                                    </div>
+                                </div>
+                                <div class="accordion-content text-lg text-[#2C2C2C]">
+                                    <p>
+                                        AI chatbots work by analyzing user input, understanding
+                                        the intent behind the message, and providing relevant
+                                        responses based on pre-defined rules or machine learning
+                                        models. They can learn from user interactions to improve
+                                        over time.
+                                    </p>
+                                </div>
+                            </li>
+                            <!-- Accordion items -->
+                            <!-- Accordion items -->
+                            <li class="jos accordion-item is-3 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px]"
+                                data-jos_delay="0.1">
+                                <div class="accordion-header flex items-center justify-between">
+                                    <h5
+                                        class="font-clashDisplay text-xl font-medium leading-[1.2] tracking-[1px] lg:text-[28px]">
+                                        Can AI chatbots understand multiple languages?
+                                    </h5>
+                                    <div class="accordion-icon is-blue">
+                                        <img src="assets/img/plus.svg" alt="plus" />
+                                        <img src="assets/img/plus-white.svg" alt="plus-white" />
+                                    </div>
+                                </div>
+                                <div class="accordion-content text-lg text-[#2C2C2C]">
+                                    <p>
+                                        AI chatbots work by analyzing user input, understanding
+                                        the intent behind the message, and providing relevant
+                                        responses based on pre-defined rules or machine learning
+                                        models. They can learn from user interactions to improve
+                                        over time.
+                                    </p>
+                                </div>
+                            </li>
+                            <!-- Accordion items -->
+                            <!-- Accordion items -->
+                            <li class="jos accordion-item is-3 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px]"
+                                data-jos_delay="0.1">
+                                <div class="accordion-header flex items-center justify-between">
+                                    <h5
+                                        class="font-clashDisplay text-xl font-medium leading-[1.2] tracking-[1px] lg:text-[28px]">
+                                        Can AI chatbots provide personalized responses?
+                                    </h5>
+                                    <div class="accordion-icon is-blue">
+                                        <img src="assets/img/plus.svg" alt="plus" />
+                                        <img src="assets/img/plus-white.svg" alt="plus-white" />
+                                    </div>
+                                </div>
+                                <div class="accordion-content text-lg text-[#2C2C2C]">
+                                    <p>
+                                        AI chatbots work by analyzing user input, understanding
+                                        the intent behind the message, and providing relevant
+                                        responses based on pre-defined rules or machine learning
+                                        models. They can learn from user interactions to improve
+                                        over time.
+                                    </p>
+                                </div>
+                            </li>
+                            <!-- Accordion items -->
+                            <!-- Accordion items -->
+                            <li class="jos accordion-item is-3 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px]"
+                                data-jos_delay="0.1">
+                                <div class="accordion-header flex items-center justify-between">
+                                    <h5
+                                        class="font-clashDisplay text-xl font-medium leading-[1.2] tracking-[1px] lg:text-[28px]">
+                                        How can I integrate an AI chatbot into my business or
+                                        website?
+                                    </h5>
+                                    <div class="accordion-icon is-blue">
+                                        <img src="assets/img/plus.svg" alt="plus" />
+                                        <img src="assets/img/plus-white.svg" alt="plus-white" />
+                                    </div>
+                                </div>
+                                <div class="accordion-content text-lg text-[#2C2C2C]">
+                                    <p>
+                                        AI chatbots work by analyzing user input, understanding
+                                        the intent behind the message, and providing relevant
+                                        responses based on pre-defined rules or machine learning
+                                        models. They can learn from user interactions to improve
+                                        over time.
+                                    </p>
+                                </div>
+                            </li>
+                            <!-- Accordion items -->
+                        </ul>
+                        <!-- Accordion-->
                     </div>
                     <!-- Section Container -->
                 </div>
                 <!-- Section Spacer -->
             </section>
             <!--...::: FAQ Section End :::... -->
-
-            <!--...::: Testimonial Section Start :::... -->
-            <section class="testimonial-section">
-                <!-- Section Spacer -->
-                <div class="bg-black pb-40 pt-20 xl:pb-[200px] xl:pt-[130px]">
-                    <!-- Section Container -->
-                    <div class="global-container">
-                        <!-- Section Content Block -->
-                        <div class="jos mb-10 text-center lg:mb-16 xl:mb-20">
-                            <div class="mx-auto max-w-[300px] lg:max-w-[600px] xl:max-w-[680px]">
-                                <h2 class="text-white">Positive feedback from our users</h2>
-                            </div>
-                        </div>
-                        <!-- Section Content Block -->
-
-                        <!-- Testimonial List -->
-                        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-                            <!-- Testimonial Item -->
-                            <div class="jos flex flex-col gap-y-8 rounded-[10px] border-[1px] border-colorCodGray p-[30px] text-white"
-                                data-jos_animation="fade-left" data-jos_delay="0.1">
-                                <div class="block">
-                                    <img src="assets/img/th-1/rating.svg" alt="rating" width="146" height="25" />
-                                </div>
-                                <p>
-                                    “This AI SaaS tool has revolutionized the way we process and
-                                    analyze data. This is a game-changer for our business.”
-                                </p>
-                                <div class="flex items-center gap-x-4">
-                                    <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
-                                        <img src="assets/img/th-1/testimonial-img-1.jpg" alt="testimonial-img"
-                                            width="60" height="60" class="h-full w-full object-cover object-center" />
-                                    </div>
-                                    <div class="flex flex-col gap-y-1">
-                                        <span class="block text-lg font-semibold leading-[1.6]">
-                                            Max Weber
-                                        </span>
-                                        <span class="block text-sm font-light leading-[1.4]">
-                                            HR Manager
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Testimonial Item -->
-                            <!-- Testimonial Item -->
-                            <div class="jos flex flex-col gap-y-8 rounded-[10px] border-[1px] border-colorCodGray p-[30px] text-white"
-                                data-jos_animation="fade-left" data-jos_delay="0.2">
-                                <div class="block">
-                                    <img src="assets/img/th-1/rating.svg" alt="rating" width="146" height="25" />
-                                </div>
-                                <p>
-                                    "It answers immediately, and we've seen a significant
-                                    reduction in response time. Our customers love it and so do
-                                    we!"
-                                </p>
-                                <div class="flex items-center gap-x-4">
-                                    <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
-                                        <img src="assets/img/th-1/testimonial-img-2.jpg" alt="testimonial-img"
-                                            width="60" height="60" class="h-full w-full object-cover object-center" />
-                                    </div>
-                                    <div class="flex flex-col gap-y-1">
-                                        <span class="block text-lg font-semibold leading-[1.6]">
-                                            Douglas Smith
-                                        </span>
-                                        <span class="block text-sm font-light leading-[1.4]">
-                                            Businessman
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Testimonial Item -->
-                            <!-- Testimonial Item -->
-                            <div class="jos flex flex-col gap-y-8 rounded-[10px] border-[1px] border-colorCodGray p-[30px] text-white"
-                                data-jos_animation="fade-left" data-jos_delay="0.3">
-                                <div class="block">
-                                    <img src="assets/img/th-1/rating.svg" alt="rating" width="146" height="25" />
-                                </div>
-                                <p>
-                                    "It is accurate, fast and supports multiple languages
-                                    support. It is a must for any international business
-                                    success."
-                                </p>
-                                <div class="flex items-center gap-x-4">
-                                    <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
-                                        <img src="assets/img/th-1/testimonial-img-3.jpg" alt="testimonial-img"
-                                            width="60" height="60" class="h-full w-full object-cover object-center" />
-                                    </div>
-                                    <div class="flex flex-col gap-y-1">
-                                        <span class="block text-lg font-semibold leading-[1.6]">
-                                            Abraham Maslo
-                                        </span>
-                                        <span class="block text-sm font-light leading-[1.4]">
-                                            Founder @ Marketing Company
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Testimonial Item -->
-                            <!-- Testimonial Item -->
-                            <div class="jos flex flex-col gap-y-8 rounded-[10px] border-[1px] border-colorCodGray p-[30px] text-white"
-                                data-jos_animation="fade-right" data-jos_delay="0.1">
-                                <div class="block">
-                                    <img src="assets/img/th-1/rating.svg" alt="rating" width="146" height="25" />
-                                </div>
-                                <p>
-                                    "Security is a top concern for us, and AI SaaS takes it
-                                    seriously. It's a reassuring layer of protection for our
-                                    organization."
-                                </p>
-                                <div class="flex items-center gap-x-4">
-                                    <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
-                                        <img src="assets/img/th-1/testimonial-img-4.jpg" alt="testimonial-img"
-                                            width="60" height="60" class="h-full w-full object-cover object-center" />
-                                    </div>
-                                    <div class="flex flex-col gap-y-1">
-                                        <span class="block text-lg font-semibold leading-[1.6]">
-                                            Jack Fayol
-                                        </span>
-                                        <span class="block text-sm font-light leading-[1.4]">
-                                            HR Manager
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Testimonial Item -->
-                            <!-- Testimonial Item -->
-                            <div class="jos flex flex-col gap-y-8 rounded-[10px] border-[1px] border-colorCodGray p-[30px] text-white"
-                                data-jos_animation="fade-right" data-jos_delay="0.2">
-                                <div class="block">
-                                    <img src="assets/img/th-1/rating.svg" alt="rating" width="146" height="25" />
-                                </div>
-                                <p>
-                                    "We were concerned about integrating their APIs were well
-                                    documented, and their support team was super cool."
-                                </p>
-                                <div class="flex items-center gap-x-4">
-                                    <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
-                                        <img src="assets/img/th-1/testimonial-img-5.jpg" alt="testimonial-img"
-                                            width="60" height="60" class="h-full w-full object-cover object-center" />
-                                    </div>
-                                    <div class="flex flex-col gap-y-1">
-                                        <span class="block text-lg font-semibold leading-[1.6]">
-                                            Karen Lynn
-                                        </span>
-                                        <span class="block text-sm font-light leading-[1.4]">
-                                            Software Engineer
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Testimonial Item -->
-                            <!-- Testimonial Item -->
-                            <div class="jos flex flex-col gap-y-8 rounded-[10px] border-[1px] border-colorCodGray p-[30px] text-white"
-                                data-jos_animation="fade-right" data-jos_delay="0.3">
-                                <div class="block">
-                                    <img src="assets/img/th-1/rating.svg" alt="rating" width="146" height="25" />
-                                </div>
-                                <p>
-                                    "The return on investment has exceeded our expectations.
-                                    it's an investment in the future of our business."
-                                </p>
-                                <div class="flex items-center gap-x-4">
-                                    <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
-                                        <img src="assets/img/th-1/testimonial-img-6.jpg" alt="testimonial-img"
-                                            width="60" height="60" class="h-full w-full object-cover object-center" />
-                                    </div>
-                                    <div class="flex flex-col gap-y-1">
-                                        <span class="block text-lg font-semibold leading-[1.6]">
-                                            Henry Ochi
-                                        </span>
-                                        <span class="block text-sm font-light leading-[1.4]">
-                                            Bank Manager
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Testimonial Item -->
-                        </div>
-                        <!-- Testimonial List -->
-                    </div>
-                    <!-- Section Container -->
-                </div>
-                <!-- Section Spacer -->
-            </section>
-            <!--...::: Testimonial Section Start :::... -->
-
-            <!-- Body Background Shape 1 -->
-            <div
-                class="orange-gradient-1 absolute -left-[15px] top-[61%] -z-[1] h-[400px] w-[400px] -rotate-[-9.022deg] rounded-[400px]">
-            </div>
-
-            <!-- Body Background Shape 2 -->
-            <div
-                class="orange-gradient-2 absolute -left-[100px] top-[64%] -z-[1] h-[360px] w-[360px] -rotate-[-9.022deg] rounded-[360px]">
-            </div>
         </main>
 
-        <!--...::: Footer Section Start :::... -->
-        <footer
-            class="relative z-[1] -mt-[70px] overflow-hidden rounded-tl-[30px] rounded-tr-[30px] bg-colorLinenRuffle lg:rounded-tl-[50px] lg:rounded-tr-[50px]">
-            <!-- Footer Top -->
-            <div class="py-[60px] xl:pb-[100px] xl:pt-[130px]">
-                <div class="overflow-hidden">
-                    <!-- Footer Text Slider -->
-                    <div class="footer-text-slider flex w-full items-center gap-x-[30px] whitespace-nowrap">
-                        <!-- Footer Slide Item  -->
-                        <img src="assets/img/th-1/footer-text-slider-icon.svg" alt="footer-text-slider-icon" width="60"
-                            height="60" class="h-10 w-10 lg:h-[60px] lg:w-[60px]" />
-                        <div
-                            class="block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]">
-                            Start building software
-                        </div>
-                        <!-- Footer Slide Item  -->
-                        <!-- Footer Slide Item  -->
-                        <img src="assets/img/th-1/footer-text-slider-icon.svg" alt="footer-text-slider-icon" width="60"
-                            height="60" class="h-10 w-10 lg:h-[60px] lg:w-[60px]" />
-                        <div
-                            class="block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]">
-                            Start building software
-                        </div>
-                        <!-- Footer Slide Item  -->
-                        <!-- Footer Slide Item  -->
-                        <img src="assets/img/th-1/footer-text-slider-icon.svg" alt="footer-text-slider-icon" width="60"
-                            height="60" class="h-10 w-10 lg:h-[60px] lg:w-[60px]" />
-                        <div
-                            class="block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]">
-                            Start building software
-                        </div>
-                        <!-- Footer Slide Item  -->
-                    </div>
-                </div>
-            </div>
-            <!-- Footer Text Slider -->
-            <!-- Footer Top -->
-            <div class="global-container">
-                <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
-                <!-- Footer Center -->
-                <div
-                    class="lg grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px]">
-                    <!-- Footer Widget -->
-                    <div class="flex flex-col gap-y-6">
-                        <a href="index.html" class="inline-block"><img src="assets/img/th-1/logo.png" alt="logo"
-                                width="96" height="24" /></a>
-                        <p>
-                            Our mission is to harness the power of AI to solve complex
-                            business challenges & decision-makers with data-driven insights,
-                            and enhance user experiences across digital platforms.
-                        </p>
-                        <p>
-                            Website: <a href="https://www.example.com">www.example.com</a>
-                        </p>
-                    </div>
-                    <!-- Footer Widget -->
-
-                    <!-- Footer Widget -->
-                    <div class="flex flex-col gap-y-6">
-                        <!-- Footer Title -->
-                        <h4 class="text-[21px] font-semibold capitalize text-black">
-                            Primary Pages
-                        </h4>
-                        <!-- Footer Title -->
-
-                        <!-- Footer Navbar -->
-                        <ul class="flex flex-col gap-y-[10px] capitalize">
-                            <li>
-                                <a href="index.html"
-                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Home</a>
-                            </li>
-                            <li>
-                                <a href="about.html"
-                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">About
-                                    Us</a>
-                            </li>
-                            <li>
-                                <a href="services.html"
-                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Services</a>
-                            </li>
-                            <li>
-                                <a href="pricing.html"
-                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">pricing</a>
-                            </li>
-                            <li>
-                                <a href="contact.html"
-                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Footer Widget -->
-
-                    <!-- Footer Widget -->
-                    <div class="flex flex-col gap-y-6">
-                        <!-- Footer Title -->
-                        <h4 class="text-[21px] font-semibold capitalize text-black">
-                            Utility pages
-                        </h4>
-                        <!-- Footer Title -->
-
-                        <!-- Footer Navbar -->
-                        <ul class="flex flex-col gap-y-[10px] capitalize">
-                            <li>
-                                <a href="signup.html"
-                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Signup</a>
-                            </li>
-                            <li>
-                                <a href="login.html"
-                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Login</a>
-                            </li>
-                            <li>
-                                <a href="error-404.html"
-                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">404 Not
-                                    found</a>
-                            </li>
-                            <li>
-                                <a href="reset-password.html"
-                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Password
-                                    Reset</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Footer Widget -->
-
-                    <!-- Footer Widget -->
-                    <div class="flex flex-col gap-y-6">
-                        <!-- Footer Title -->
-                        <h4 class="text-[21px] font-semibold capitalize text-black">
-                            Subscribe to our newsletter
-                        </h4>
-                        <!-- Footer Title -->
-                        <!-- Footer Subscriber Form -->
-                        <form action="#" method="post" class="">
-                            <div class="relative h-[50px] max-w-[300px]">
-                                <input type="email" name="newsletter-email" id="newsletter-email"
-                                    placeholder="Enter your email"
-                                    class="p-y-[18px] h-full w-full rounded-[50px] border-[1px] border-black px-[24px] pr-20 outline-none"
-                                    required />
-                                <button type="submit"
-                                    class="absolute right-[5px] top-[50%] inline-block h-10 -translate-y-[50%] rounded-[50px] bg-black px-6 transition-all hover:bg-orange-500">
-                                    <img src="assets/img/th-1/arrow-right-large.svg" alt="newsletter" />
-                                </button>
+        <!--...::: Footer-2 Section Start :::... -->
+        <footer id="section-footer-3">
+            <div class="bg-black text-white">
+                <!-- Espaçamento da seção -->
+                <div class="py-20 xl:py-[130px]">
+                    <!-- Parte superior do rodapé -->
+                    <div>
+                        <div class="global-container">
+                            <!-- Conteúdo do topo -->
+                            <div class="grid-col-1 grid items-center gap-10 md:grid-cols-2">
+                                <div>
+                                    <h2 class="font-raleway text-white">Junte-se a nós</h2>
+                                </div>
+                                <div class="jos flex flex-col gap-10 md:gap-[50px]">
+                                    <p class="text-lg font-semibold leading-[1.33] md:text-xl lg:text-2xl">
+                                        Juntos, vamos construir uma geração mais forte. Acreditamos na juventude como
+                                        motor de
+                                        transformação social. O Youth Meraki Summit é um espaço de inspiração, conexão e
+                                        ação.
+                                    </p>
+                                </div>
                             </div>
-                        </form>
-                        <!-- Footer Subscriber Form -->
+
+                            <!-- Contactos do evento -->
+                            <div class="mt-11 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                                <div
+                                    class="rounded-[10px] bg-[#121212] px-11 py-5 text-center font-raleway font-bold leading-[1.33] text-[#F6F6EB] transition-all duration-300 hover:bg-[#381FD1] xl:text-2xl xxl:text-3xl">
+                                    <a href="mailto:Info.studyoverseas@youthmeraki.com">Info@youthmeraki.com</a>
+                                </div>
+                                <div
+                                    class="rounded-[10px] bg-[#121212] px-11 py-5 text-center font-raleway font-bold leading-[1.33] text-[#F6F6EB] transition-all duration-300 hover:bg-[#381FD1] xl:text-2xl xxl:text-3xl">
+                                    <a href="tel:+258844769730">+258 84 476 9730</a>
+                                </div>
+                                <div
+                                    class="rounded-[10px] bg-[#121212] px-11 py-5 text-center font-raleway font-bold leading-[1.33] text-[#F6F6EB] transition-all duration-300 hover:bg-[#381FD1] xl:text-2xl xxl:text-3xl">
+                                    <a href="https://wa.me/31649995481" target="_blank" rel="noopener"> +31 6
+                                        49995481</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Footer Widget -->
-                </div>
-                <!-- Footer Center -->
-                <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
-                <!-- Footer Bottom -->
-                <div class="py-9 text-center">
-                    <p>&copy; Copyright 2023, All Rights Reserved by Mthemeus</p>
-                </div>
-                <!-- Footer Bottom -->
-            </div>
 
-            <!-- Footer Background Shape 1  -->
-            <div
-                class="orange-gradient-2 absolute -top-[290px] right-[90px] -z-[1] h-[406px] w-[406px] -rotate-[58deg] rounded-[406px]">
-            </div>
+                    <!-- Rodapé inferior -->
+                    <div class="mt-[100px]">
+                        <div class="global-container">
+                            <div
+                                class="grid gap-x-10 gap-y-[60px] md:grid-cols-2 lg:flex lg:grid-cols-4 lg:justify-between lg:gap-x-20">
+                                <!-- Logo e descrição -->
+                                <div class="flex flex-col gap-y-6 md:max-w-xs xl:max-w-[480px]">
+                                    <!-- <a href="index.html" class="inline-block">
+                                        <img src="assets/img/logo-light.png" alt="logo Youth Meraki" width="96" height="24" />
+                                    </a> -->
+                                    <p>
+                                        O Youth Meraki Summit é uma plataforma que celebra e empodera jovens líderes
+                                        moçambicanos. Conectamos mentes criativas e comprometidas com o desenvolvimento
+                                        sustentável, inovação e impacto social.
+                                    </p>
+                                    <p>
+                                        &copy; Copyright 2025. Todos os direitos reservados por Youth Meraki.
+                                    </p>
+                                </div>
 
-            <!-- Footer Background Shape 2  -->
-            <div
-                class="orange-gradient-1 absolute -right-[200px] -top-[205px] -z-[1] h-[451px] w-[451px] -rotate-[58deg] rounded-[451px]">
+                                <!-- Páginas principais -->
+                                <div class="flex flex-col gap-y-6">
+                                    <h4 class="text-[21px] font-semibold capitalize text-white">Secções principais</h4>
+                                    <ul class="flex flex-col gap-y-[10px] capitalize">
+                                        <li><a href="#home"
+                                                class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Início</a>
+                                        </li>
+                                        <li><a href="#sobre"
+                                                class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Sobre
+                                                o evento</a></li>
+                                        <li><a href="#oradores"
+                                                class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Oradores</a>
+                                        </li>
+                                        <li><a href="#pacotes-section"
+                                                class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Pacotes</a>
+                                        </li>
+                                        <li><a href="#contacto"
+                                                class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Contacto</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Páginas úteis -->
+                                <div class="flex flex-col gap-y-6">
+                                    <h4 class="text-[21px] font-semibold capitalize text-white">Informações úteis</h4>
+                                    <ul class="flex flex-col gap-y-[10px] capitalize">
+                                        <li><a href="#faq"
+                                                class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">FAQ</a>
+                                        </li>
+                                        <li><a href="#inscricao"
+                                                class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Inscrição</a>
+                                        </li>
+                                        <li><a href="#voluntariado"
+                                                class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Voluntariado</a>
+                                        </li>
+                                        <li><a href="#parcerias"
+                                                class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Parcerias</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Redes sociais -->
+                                <div class="flex flex-col gap-y-6">
+                                    <h4 class="text-[21px] font-semibold capitalize text-white">Redes sociais</h4>
+                                    <ul class="flex flex-col gap-y-[15px] capitalize">
+                                        <li>
+                                            <a href="https://www.youtube.com/@youthmeraki2938"
+                                                class="group flex items-center gap-x-3" target="_blank">
+                                                <div
+                                                    class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white bg-opacity-10 transition-all duration-300 group-hover:bg-colorViolet">
+                                                    <img src="assets/img/th-2/icons8-youtube.svg" alt="YouTube"
+                                                        width="14" height="14" />
+                                                </div>
+                                                <span class="inline-block flex-1">YouTube</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com" class="group flex items-center gap-x-3">
+                                                <div
+                                                    class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white bg-opacity-10 transition-all duration-300 group-hover:bg-colorViolet">
+                                                    <img src="assets/img/th-1/instagram-icon-white.svg" alt="Instagram"
+                                                        width="14" height="14" />
+                                                </div>
+                                                <span class="inline-block flex-1">Instagram</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com" class="group flex items-center gap-x-3">
+                                                <div
+                                                    class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white bg-opacity-10 transition-all duration-300 group-hover:bg-colorViolet">
+                                                    <img src="assets/img/th-1/linkedin-icon-white.svg" alt="LinkedIn"
+                                                        width="14" height="14" />
+                                                </div>
+                                                <span class="inline-block flex-1">LinkedIn</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
-        <!--...::: Footer Section End :::... -->
+
+
+
+        <!--...::: Footer-2 Section End :::... -->
+        <!-- Back to Top Button -->
+        <!-- Back to Top Button (alinhado corretamente) -->
+        <button id="backToTop"
+            class="fixed bottom-6 right-6 z-50 hidden h-12 w-12 flex items-center justify-center rounded-full bg-[#8C785C] text-white shadow-lg transition-transform hover:scale-110 hover:bg-[#D3AE91] duration-300"
+            aria-label="Voltar ao topo">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mt-[1px]" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+            </svg>
+        </button>
+
+
     </div>
+    <script>
+        // Mostrar ou ocultar botão
+        const backToTopButton = document.getElementById("backToTop");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.remove("hidden");
+            } else {
+                backToTopButton.classList.add("hidden");
+            }
+        });
+
+        // Voltar ao topo suavemente
+        backToTopButton.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
 
     <!--Vendor js-->
     <script src="assets/js/vendors/counterup.js" type="module"></script>
@@ -1328,6 +1591,18 @@
 
     <!-- Main js -->
     <script src="assets/js/main.js"></script>
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let current = 0;
+
+        setInterval(() => {
+            slides[current].classList.remove('opacity-100');
+            slides[current].classList.add('opacity-0');
+            current = (current + 1) % slides.length;
+            slides[current].classList.remove('opacity-0');
+            slides[current].classList.add('opacity-100');
+        }, 3000);
+    </script>
 </body>
 
 </html>
